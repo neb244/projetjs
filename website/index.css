@@ -1,0 +1,477 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Segeo ui';
+  src: url('font/segoeuithis.ttf') format('truetype');
+}
+
+
+
+
+/* BARRE DE NAVIGATION ------*/
+
+/* -------- */
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.text-balance {
+  line-height: 1.5;
+   /* Augmentez l'interligne si nécessaire */
+}
+
+input, textarea {
+  padding: 0.75rem 1rem;
+}
+
+.highlight {
+  
+  background: linear-gradient(45deg, #2832a2, #6a82fb); /* Dégradé de couleurs */
+  background: linear-gradient(45deg, #1b2384, #0c32f1); /* Dégradé de couleurs */
+  color: #ffffff; /* Couleur du texte noir */
+  padding: 0.0em 0.0em; /* Espacement autour du texte */
+  border-radius: 0.2em; /* Coins arrondis */
+  font-weight: bold; /* Texte en gras */
+  /* display: inline-block;  */
+}
+/* Dégradé de couleur */
+.highlight {
+  background: linear-gradient(45deg, #181c54, #0044ff); /* Dégradé de couleurs */
+  -webkit-background-clip: text; /* Clipper le fond au texte */
+  -webkit-text-fill-color: transparent; /* Remplir le texte avec le fond */
+  font-weight: bold; /* Texte en gras */
+  display: inline-block; /* Permet d'ajouter du padding autour du mot */
+}
+.marqueur {
+  background: linear-gradient(45deg, #181c54, #0044ff); 
+  /* Dégradé de couleurs */
+  -webkit-background-clip: text; 
+  /* Clipper le fond au texte */
+  -webkit-text-fill-color: transparent; 
+  /* Remplir le texte avec le fond */
+  display: inline-block; 
+  /* Permet d'ajouter du padding autour du mot */
+      padding: 0.16em 0;
+
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+.description {
+    flex-grow: 1;
+}
+.button-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+} */
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
+  width: 200px;
+  height: 100px;
+  /* background-color: #e11d48; */
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
+  left: 100%;
+  animation-name: scrollLeft;
+}
+
+.itemRight {
+  right: 100%;
+  animation-name: scrollRight;
+}
+
+.item1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.hero-section {
+  /* background-color: #ffffff; Couleur de fond de la section */
+  /* padding-top: 8rem; Espace au-dessus du contenu */
+
+  /* Styles de flexbox pour aligner les éléments */
+  display: flex;
+  justify-content: center;
+}
+
+/*BARRE DE NAVIGATION___________________________________________________________________________________________
+/* Masquer la bandelette sur les écrans de moins de 768px */
+@media (max-width: 767px) {
+  .bandelette {
+    display: none;
+  }
+}
+
+/* Conteneur principal avec une largeur maximale */
+.container {
+  max-width: 1200px;
+}
+
+/* BARRE NAV___________________________________________________________________________________________________________________________________________________________________________ */
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; /* Réduction du padding vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style du logo */
+.custom-logo-image {
+  max-height: 100px; /* Réduction de la taille du logo */
+  width: auto;
+  margin-left: 0rem;
+}
+
+/* Style général de la barre de navigation */
+.custom-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-nav a.custom-nav-link {
+  color: #4a5568; /* Couleur de texte */
+  font-weight: 400; /* Font medium */
+  font-size: 1.25rem; /* Taille du texte augmentée (lg -> xl) */
+  padding: 0.25rem 0.75rem; /* Padding autour des liens */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.custom-nav a.custom-nav-link:hover {
+  color: #2b6cb0; /* Changement de couleur au survol */
+}
+
+/* Dropdown - Services */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%; /* Position à 50% de la largeur du parent */
+  transform: translateX(-50%); /* Centrer horizontalement */
+  background-color: #ffffff;
+  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 0.5rem 0;
+  border-radius: 10px; /* Bordures arrondies pour le dropdown */
+}
+
+.custom-dropdown-content a {
+  color: #4a5568;
+  padding: 0.75rem 1.5rem; /* Plus d'espace autour du texte */
+  text-decoration: none;
+  display: block;
+  font-size: 1.125rem; /* Taille de police agrandie */
+  transition: background-color 0.3s ease;
+}
+
+.custom-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #1e40af;
+}
+
+.custom-dropdown-content a i {
+  margin-right: 0.5rem; /* Ajoute de l'espace entre l'icône et le texte */
+}
+
+/* Affichage du dropdown au survol */
+.custom-dropdown:hover .custom-dropdown-content {
+  display: block;
+}
+
+/* Bouton contact */
+.custom-contact-button {
+  padding: 0.25rem 0.75rem; /* Moins de padding pour le bouton */
+  margin-bottom: 0; /* Enlever la marge en bas */
+  background-color: white;
+  border: 2px solid #d1d5db; /* Border color: gray-300 */
+  color: #1e40af; /* Texte bleu */
+  font-weight: 600; /* Font-semibold */
+  border-radius: 0.75rem; /* Arrondissement léger des coins */
+  display: inline-block; /* Default alignment */
+}
+
+.custom-contact-button .phone-icon {
+  display: none;
+}
+
+.custom-contact-button .button-text {
+  display: inline;
+}
+
+/* Mobile et tablette */
+@media screen and (max-width: 820px) {
+  #mobile-menu {
+    display: none;
+    justify-content: center; /* Centre horizontalement le menu */
+    align-items: center; /* Centre les éléments verticalement si nécessaire */
+  }
+
+  #mobile-menu.show {
+    display: flex; /* Affiché lorsque la classe 'show' est ajoutée */
+  }
+
+  #mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les liens à l'intérieur du menu */
+  }
+
+  .custom-nav-link,
+  .custom-dropdown {
+    text-align: center; /* Centre les textes */
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-contact-button {
+    margin-left: auto; /* Push the button to the far right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-contact-button .button-text {
+    display: none;
+  }
+
+  .custom-contact-button .phone-icon {
+    display: inline;
+    font-size: 1.1rem; /* Adjust icon size as needed */
+  }
+
+  #menu-button {
+    margin-left: auto; /* Push the button to the far right */
+    display: flex;
+  }
+
+  .custom-nav {
+    display: none !important;
+  }
+}
+
+/* FIN BARRE NAV__________________________________________________________________________________________________________________________________________________________ */
+
+
+/* Style pour le texte dans la colonne de gauche */
+.hero-section .text-center {
+  /* text-align: center; Alignement du texte au centre sur les petits écrans */
+}
+.card {
+    max-height: 1000px; /* Limite de la hauteur maximale */
+    overflow: hidden; /* Cache le contenu qui dépasse */
+    display: flex;
+    flex-direction: column;
+  }
+  .card img {
+    flex-shrink: 0;
+  }
+  .card-content {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Nombre de lignes visibles */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+/* Masquer la barre de défilement pour les navigateurs Webkit (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.iconhand {
+  font-size: 35px;
+}
+/* Défilement temoignage -----*/
+  /* Barre de défilement discrète et arrondie pour les navigateurs Webkit (Chrome, Safari) */
+  .scrollbar-discrete::-webkit-scrollbar {
+    width: 3px; /* Réduire la largeur de la barre de défilement */
+    height: 3px; /* Réduire la hauteur de la barre de défilement horizontale */
+  }
+  .scrollbar-discrete::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Couleur très transparente de la barre de défilement */
+    border-radius: 10px; /* Arrondir les coins de la barre de défilement */
+  }
+  .scrollbar-discrete::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05); /* Couleur de la piste très discrète */
+    border-radius: 10px; /* Arrondir les coins de la piste */
+  }
+
+  /* Barre de défilement discrète et arrondie pour Firefox */
+  .scrollbar-discrete {
+    scrollbar-width: thin; /* Mince */
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05); /* Couleur très discrète de la barre de défilement et de la piste */
+  }
+  .scrollbar-discrete::-moz-scrollbar-thumb {
+    border-radius: 10px; /* Arrondir les coins de la barre de défilement */
+  }
+  .scrollbar-discrete::-moz-scrollbar-track {
+    border-radius: 10px; /* Arrondir les coins de la piste */
+  }
+
+  /* Pour IE et Edge */
+  .scrollbar-discrete {
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* Barre de défilement masquée automatiquement */
+  }
+  /* Menu déroulant */
+.relative.group:hover .absolute {
+  display: block;
+}
+
+
+/* Styles du menu déroulant */
+.relative.group {
+  position: relative;
+}
+
+.relative.group:hover .absolute {
+  display: block;
+}
+
+.absolute {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+  z-index: 10;
+}
+
+.text-limit {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.uniform-spacing {
+  margin-top: 0.5rem; /* Ajustez selon vos besoins */
+  padding: 0.5rem; /* Pour l'espace intérieur */
+
+}
+
+
+/* Réponse pour les tailles d'écran plus grandes */
+@media (min-width: 768px) {
+  /* Alignement des éléments en une ligne sur les écrans moyens et plus grands */
+  .hero-section .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Ajustement de l'espace entre les colonnes */
+  .hero-section .w-full {
+    width: 100%; /* Largeur maximale pour la colonne de texte */
+  }
+
+  .hero-section .md:w-2/5 {
+    width: 40%; /* Largeur pour la colonne de texte sur les écrans moyens */
+  }
+
+  .hero-section .md:w-3/5 {
+    width: 60%; /* Largeur pour la colonne d'image sur les écrans moyens */
+  }
+
+  .hero-section .md:ml-auto {
+    margin-left: auto; /* Décalage automatique pour la colonne d'image */
+  }
+  
+}
+
+
+

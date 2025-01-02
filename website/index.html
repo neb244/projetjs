@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agence de marketing digital créative, spécialisée dans la stratégie digitale, le design web et l'identité de marque. Basée à Bruxelles, nous aidons les entreprises à se démarquer en ligne.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
+    <title>Agence de Marketing Digital | Digital Dreamer</title>
+  </head>
+  <body class="bg-gray-50">
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+<section>
+<div class="border-b border-gray-300 bandelette">
+  <div class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap py-1.5 flex-col md:flex-row items-center">
+      <div class="flex items-center flex-shrink-0 ml-4 mr-4">
+        <img src="image/icons8-courrier-16.png" alt="Logo d'adresse mail" class="w-7 h-7 p-1 bg-white">
+        <span class="ml-2 text-base">info@ko-ordinate.be</span>
+      </div>
+      <div class="flex items-center flex-shrink-0 mr-4">
+        <img src="image/icons8-téléphone-16.png" alt="Logo de téléphone" class="w-7 h-7 p-1 bg-white">
+        <span class="ml-2 text-base">+32 (0) 490 35 80 04</span>
+      </div>
+      <nav class="ml-auto flex flex-wrap items-center text-base justify-end">
+        <span class="text-base mr-4 text-gray-800">Votre site internet à 500€ !</span>
+      </nav>
+    </div>
+  </div>
+</div>
+</section>
+<header class="custom-header text-gray-700 font-normal bg-white shadow-md sticky top-0 z-50">
+  <div class="custom-container mx-auto flex flex-wrap md:flex-row items-center">
+    <a href="index.html" class="custom-logo flex title-font font-medium items-center text-gray-900 my-2 md:mb-0">
+      <img src="image/logodigital.png" alt="Logo Digital Dreamer" class="custom-logo-image ml-3 h-16 w-auto">
+    </a>
+    <nav class="custom-nav md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center space-x-4">
+      <a href="index.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Accueil</a>
+      <div class="custom-dropdown">
+        <a href="services.html" class="custom-nav-link custom-services-link font-medium text-lg hover:text-blue-800">Services <i class="fa-solid fa-chevron-down fa-xs" style="font-size: 9px;"></i></a>
+        <div class="custom-dropdown-content">
+          <a href="siteweb.html"><i class="fa-regular fa-window-maximize"></i> Création de site</a>
+          <a href="creationlogo.html"><i class="fa-solid fa-swatchbook"></i> Création de logo</a>
+          <a href="referencement.html"><i class="fa-solid fa-chart-line"></i> Référencement de sites</a>
+          <a href="hebergement.html"><i class="fa-solid fa-window-restore"></i> Hébergement web</a>
+          <a href="video.html"><i class="fa-solid fa-video"></i> Réalisation de vidéo</a>
+          <a href="emailing.html"><i class="fa-regular fa-calendar-days"></i> Gestion emailing</a>
+        </div>
+      </div>
+      <a href="agence.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Agence</a>
+      <a href="portfolio.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Portfolio</a>
+      <a href="contact.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Contact</a>
+    </nav>
+    <div class="navbar-container flex items-center ml-auto">
+      <a href="contact.html" class="custom-contact-button text-base px-2 text-blue-900 border-2 border-gray-300 rounded-lg hover:bg-blue-900 hover:text-white hover:border-blue-900 transition ease-linear duration-300 mr-2">
+        <span class="button-text">Nous contacter</span>
+        <i class="fa-solid fa-phone phone-icon"></i>
+      </a>
+      <button id="menu-button" class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="lg:hidden">
+    <nav class="flex flex-col space-y-2 p-4">
+      <a href="index.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Accueil</a>
+      <div class="custom-dropdown">
+        <a href="services.html" class="custom-nav-link custom-services-link font-normal text-lg hover:text-blue-800">Services</a>
+      </div>
+      <a href="agence.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Agence</a>
+      <a href="portfolio.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Portfolio</a>
+      <a href="contact.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="w-screen mx-auto lg:w-full lg:px-10 xl:max-w-6xl">
+  <div class="px-4 py-8 md:px-16 md:pt-10 lg:px-0 max-w-7xl">
+    <div class="container px-0 md:px-3 flex flex-wrap md:flex-nowrap">
+      <div class="w-full  md:w-full mb-8 md:mb-0 lg:w-4/5  ">
+        <h1 class="text-5xl font-bold tracking-tight w-full  text-gray-900 md:text-6xl md:leading-none md:w-full   lg:text-6xl xl:text-7xl lg:w-full  text-balance">
+          Votre Agence de <span class="marqueur">marketing digitale</span> à Bruxelles
+        </h1>
+        <p class="mt-4 text-sm md:text-base lg:text-base  font-normal text-gray-500 text-balance">
+          Augmentez votre visibilité et chiffre d'affaires avec Digital Dreamer à Bruxelles. Services de marketing digital et création de sites web adaptés à vos besoins et budget.
+        </p>
+        <div class="flex flex-col items-center gap-4 mx-auto mt-8 md:flex-row">
+          <button class="text-base inline-flex items-center justify-center w-full md:w-auto h-12 gap-3 px-5 py-3 font-medium shadow-lg text-white duration-200 bg-blue-900 rounded-xl hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-black" aria-label="Primary action"><a href="contact.html">
+            Nous contacter
+          </a>
+          </button>
+          <p class="my-0 md:my-4 text-center md:text-left text-base">
+            <a href="agence.html" class="text-blue-900 font-semibold hover:underline">
+              En savoir plus <i class="fa-solid fa-arrow-right fa-xs" style="color: #312497;"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+<div class="hidden lg:block w-full lg:w-2/5 md:ml-auto">
+  <img src="image/_Pngtree_concept_team_work_meeting_illlustration_5356573__2_-removebg.png" alt="Des experts d'une agence de marketing digital développant un site web" class="w-full h-auto">
+</div>
+    </div>
+  </div>
+</section>
+<section></section>
+    <div class=" max-w-[90%] mx-auto">
+      <p class=" font-medium text-gray-600 text-center text-base md:text-base">Les solutions utilisées</p>
+    </div>
+      <div class="max-w-[90%] mx-auto">
+        <div class="mt- grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="image/WordPress-pour-la-creation-de-site-vitrine.png" class="h-20 w-auto mx-auto" loading="lazy" alt="Logo WordPress" width="" height="" />
+        </div>
+      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+        <img src="image/La-suite-Adobe-pour-la-creation-de-logo-et-charte-graphique.png" class="h-20 w-auto mx-auto" loading="lazy" alt="Logo Suite Adobe" width="" height="" />
+      </div>
+      <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+        <img src="image/Logo_Google_Analytics.svg.png" class="h-9 w-auto m-auto" loading="lazy" alt="Logo Google Analytics" width="" height="" />
+      </div>
+      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="image/PrestaShop.png" class="h-14 w-auto mx-auto" loading="lazy" alt="Logo PrestaShop" width="" height="" />
+        </div>
+        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+          <img src="image/MailChimp.png" class="h-16 w-auto m-auto" loading="lazy" alt="Logo MailChimp" width="" height="" />
+        </div>
+      <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+          <img src="image/Semrush.png" class="h-16 w-auto mx-auto" loading="lazy" alt="Logo Semrush" width="" height="" />
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  <section class="relative lg:mt-2 md:mt-7 ">
+    <Container>
+        <div
+            class="flex flex-wrap sm:flex-nowrap justify-center items-center mx-auto p-5 sm:p-6 py-6 sm:py-8 max-w-5xl 
+            rounded-3xl shadow-box-shadow md:divide-x divide-box-border gap-4 sm:gap-8 md:gap-6 lg:gap-12"
+        >
+            <div class="text-center flex-1">
+                <h2 class="font-semibold text-2xl sm:text-3xl lg:text-4xl text-heading-1">+12</h2>
+                <p class="mt-1 text-lg g sm:text-xl font-semibold text-heading-3">Ans</p>
+            </div>
+            <div class="text-center flex-1">
+                <h2 class="font-semibold text-2xl sm:text-3xl lg:text-4xl text-heading-1">+1500</h2>
+                <p class="mt-1 text-lg sm:text-xl font-semibold text-heading-3">Projets</p>
+            </div>
+            <div class="text-center flex-1"> 
+                <h2 class="font-semibold text-2xl sm:text-3xl lg:text-4xl text-heading-1">100%</h2>
+                <p class="mt-1 text-lg sm:text-xl font-semibold text-heading-3">Satisfait</p>
+            </div>      
+        </div>
+    </Container>
+</section>
+  <div class="container mx-auto pt-8  lg:pt-14">
+    <div class="px-8 mx-auto md:px-12  md:py-3 max-w-7xl">
+      <div>
+        <h2 class="text-4xl md:text-5xl text-center font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
+          Nos Services  
+          <p class="mt-4 text-lg text-center text-gray-600 font-normal lg:text-xl tracking-normal">Plongez au cœur de l’innovation avec notre agence !</p>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="px-8 py-9 pb-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+      <div class="grid grid-cols-1 text-sm font-medium text-gray-500 gap-x-2 gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-16 text-balance">
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/website-6692147_640.png" alt="Développeur web constituant la maquette d'un site web" class="w-full h-52 mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl">Création de site web</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                Votre agence marketing digital à Bruxelles optimise votre visibilité en ligne avec un site professionnel. Touchez un large public et améliorez vos interactions clients.
+              </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="siteweb.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>   
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/swati-b-FP3zYIeDqlM-unsplash.jpg" alt="Superposition de palettes de couleurs et de formes illustrant le processus de création de logo" class="w-full h-52  mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl">Création de logo</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                Les logos jouent un rôle crucial dans l’identité visuelle et la reconnaissance de marque, transcendant le secteur et la taille de l’entreprise. Chaque PME et indépendant mérite un logo qui parle, qui raconte une histoire, et qui soutient une stratégie marketing robuste.              </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="creationlogo.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/growtika-70L6WwrvSC0-unsplash.jpg" alt="Site web avec barre de recherche 'SEO', graphiques et fusée illustrant le référencement SEO et la performance" class="w-full h-52 mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl">Référencement de site web</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                Dans l’arène numérique actuelle, particulièrement à Bruxelles, se démarquer sur Google et d’autres moteurs de recherche est essentiel pour la visibilité de votre entreprise. Cela nécessite une expertise SEO (référencement naturel) pointue, un domaine où Digital Dreamer excelle.
+              </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="referencement.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/growtika-WELyMatW3mw-unsplash.jpg" alt="Serveurs dans un nuage numérique connectés à une puce, symbolisant le cloud computing et l'hébergement web" class="w-full h-52 mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl  ">Hébergement de sites web</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                Un site internet performant repose sur un hébergement web de qualité. Digital Dreamer votre partenaire digital, vous guide à travers les méandres de l’hébergement web, élément crucial pour la sécurité, la vitesse et le référencement de votre site.               </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="siteweb.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/jared-brashier-duNHkmSkW6M-unsplash.jpg" alt="Drone aérien capturant des vidéos professionnelles depuis le ciel" class="w-full h-52  mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl">Réalisation de vidéos</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                L’essor des activités d’une entreprise passe inévitablement par une communication efficace. Dans ce contexte, la vidéo d’entreprise se révèle comme un vecteur de communication essentiel, agissant comme une véritable carte de visite digitale.              </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="creationlogo.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="p-1 overflow-hidden border rounded-3xl">
+            <img src="image/mail-146645_1280.png" alt="Illustration d'une enveloppe rose représentant le service de gestion d'emailing" class="w-full h-52 mx-auto rounded-2xl">
+          </div>
+          <div class="flex flex-col justify-between px-4 mt-4">
+            <div>
+              <p class="text-gray-900 text-2xl">Gestion Emailing</p>
+              <p class="mt-2 font-normal leading-relaxed text-balance text-limit">
+                La newsletter, cette puissante carte de visite digitale, est devenue un outil indispensable pour toute stratégie de communication dynamique. Chez Digital Dreamer, nous sommes experts en création et gestion d’emailing, offrant à votre entreprise la possibilité de se connecter régulièrement avec sa communauté en ligne.               </p>
+            </div>
+            <div class="flex mt-8">
+              <a href="referencement.html" class="inline-flex items-center justify-center text-sm font-semibold text-blue-900 duration-200 hover:text-blue-500 focus:outline-none" aria-label="Read more about the topic">
+                <span class="text-blue-900">En savoir plus</span>
+                <svg aria-hidden="true" focusable="false" class="size-4 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container mx-auto my-6">
+      <div class="px-8 md:pr-40 mx-auto md:px-16 lg:pl-36 lg:pr-16 max-w-7xl">
+        <div>
+          <h1 class="text-center text-3xl font-semibold tracking-tighter text-gray-900 leading-tight md:text-5xl md:text-left lg:text-5xl lg:py-4  ">
+            Concepteur professionnel en marketing digital et sites web  
+            <span class="text-blue-900">à Bruxelles <i class="fa-solid fa-map-pin text-2xl"></i></span>
+          </h1>
+        </div>
+      </div>
+    <div class="px-8 pt-6  sm:py-10 mx-auto md:px-12 lg:px-32 max-w-7xl">
+      <div class="grid text-sm font-medium text-gray-500 lg:grid-cols-2 gap-x-2 gap-y-12 lg:gap-y-16 text-balance">
+        <div>
+          <div class="flex flex-col justify-between px-4 sm:pt-5 sm:pb-7">
+            <div>
+              <p class="text-2xl tracking-tighter font-medium md:text-4xl text-gray-900 sm:tracking-tight">Qui sommes nous ?</p>
+              <p class="mt-2 pt-3 leading-normal md:text-lg lg:text-base font-normal ">
+                Digital Dreamer,<b> spécialiste de la création de site web à Bruxelles</b>, aspire à démocratiser l’accès aux solutions digitales. Avec notre riche expérience, nous visons à être une référence dans l’univers digital, proposant une palette de <b>services marketing et Web</b> adaptés et innovants. Notre approche mêle expertise et créativité, témoignant de notre dévouement à l’excellence et à la satisfaction de nos clients.              
+            </div>
+          </div>
+          <div class="p-2 sm:mt-4 overflow-hidden border rounded-3xl hidden md:hidden lg:block ">
+            <img src="image/annie-spratt-hCb3lIB8L8E-unsplash.jpg" alt="Equipe d'expert en marketing digital" class="w-full h-64  mx-auto rounded-2xl  ">
+          </div>
+        </div>
+        <div>
+          <div class="text-2xl sm:pb-2 p-2 overflow-hidden border rounded-3xl">
+            <img src="image/ben-morris-oUmpS7ERWq4-unsplash.jpg" alt="La Région de Bruxelles-Capitale" class="w-full h-60 mx-auto rounded-2xl object-cover">
+        </div>
+          <div class="flex flex-col justify-between py-7 px-4 mt-4">
+            <div>
+              <p class="text-2xl tracking-tighter font-medium md:text-4xl text-gray-900 sm:tracking-tight">Notre portfolio</p>
+              <p class="mt-2 pt-3 pb-4 leading-normal md:text-lg lg:text-base font-normal">
+                Projets web de petite ou grande envergure, bénéficiant d’architectures de sites diversifiées et soignées, explorez les réalisations de notre <b>agence web </b> pour mesurer l’étendue de nos capacités. Notre expérience s’étend sur des années dans la <b>création de sites vitrines</b> via des <b>CMS</b> que <b>WordPress</b>, <b>PrestaShop</b>,<b>Drupal</b>, et <b>Joomla</b>, témoignant de notre savoir-faire.
+              </p>
+                  <button href="agence.html" class="text-base mt-9 px-3 py-2 md:px- md:py- flex items-center gap-3 font-normal text-white bg-blue-900 border-2 border-blue-900 rounded-md  hover:text-blue-900 hover:bg-white transition ease-linear duration-300 mx-right sm:mx-0">
+                En savoir d'avantage<i class="fa-solid fa-arrow-right fa-xs" style="transition ease-linear duration-300 color: #ffffff;"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      
+     <section>
+      <div class="px-10 py- mx-auto md:px-14 lg:px-32 max-w-7xl">
+        <div>
+          <h1 class="text-3xl sm:text-xl md:text-5xl font-semibold tracking-tighter text-gray-900 lg:text-5xl text-balance">
+            Votre succès en ligne en 4 étapes clés
+          </h1>
+          <p class="mt-4 text-sm sm:text-lg font-normal text-gray-500 text-balance">
+            Découvrez notre méthodologie éprouvée pour transformer vos idées en résultats probants…
+          </p>
+    
+          <div class="grid grid-cols-2 mt-12 gap-x-6 gap-y-12 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+            <div>
+              <div>
+                <span class="flex items-center justify-center rounded-full w-12 h-12 bg-gray-100">
+                    <i class="fa-solid fa-1 text-blue-900  text-2xl"></i>
+                </span>
+            </div>
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900">Données</h3>
+                <p class="mt-2 text-sm sm:text-base  text-gray-500">
+                  Nous commençons par comprendre vos besoins, étudier votre marché et analyser vos concurrents pour établir une base solide.                
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <span class="flex items-center justify-center rounded-full w-12 h-12 bg-gray-100">
+                  <i class="fa-solid fa-2 text-blue-800  text-2xl"></i>
+              </span>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900">Planification</h3>
+                <p class="mt-2 text-sm sm:text-base text-gray-500">
+                  En utilisant les insights collectés, nous planifions une stratégie personnalisée, définissant les objectifs clés et les moyens pour les atteindre.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <span class="flex items-center justify-center rounded-full w-12 h-12 bg-gray-100">
+                  <i class="fa-solid fa-3 text-blue-700  text-2xl"></i>
+              </span>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900">Implémentation</h3>
+                <p class="mt-2 text-sm sm:text-base text-gray-500">
+                  Nous transformons la stratégie en actions concrètes, en développant votre site web et en déployant des tactiques de marketing digital ciblées.
+
+                </p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <span class="flex items-center justify-center rounded-full w-12 h-12 bg-gray-100">
+                  <i class="fa-solid fa-4 text-blue-600  text-2xl"></i>
+              </span>
+              </div>
+              <div class="mt-6">
+                <h3 class="text-lg font-medium text-gray-900">Résultat</h3>
+                <p class="mt-2 text-sm sm:text-base text-gray-500">
+                  Nous évaluons les performances, apportons des ajustements continus et mesurons l’impact pour garantir le meilleur retour sur investissement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[85%] mx-auto my-7 pt-10 lg:pt-2">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full md:w-1/2 lg:w-1/2 px-2 lg:px-10">
+          <div>
+            <h5 class="text-left text-4xl md:text-4xl font-semibold tracking-tight text-blue-900 lg:text-4xl lg:font-bold  xl:text- text-balance">
+              Un partenariat durable </h5>
+              <p class="text-gray-900 text-right md:text-left  font-normal text-xl md:text-2xl  lg:text-3xl text-balance mt-3 lg:tracking-normal">Notre engagement ne s’arrête pas à la livraison !
+              </p>
+          </div>
+
+        </div>
+        <div class="my-4  lg:my-8  px-2 w-full md:w-2/4 lg:w-2/4 lg:px-4">
+          <p class="font-normal text-base lg:text-lg text-gray-900  dark:text-gray-400 lg:leading-normal">
+            Chez Digital Dreamer, votre voyage digital dépasse la simple mise en ligne. En tant qu’agence web de premier plan à <a href="https://www.bruxelles.be" class="text-blue-900 font-bold" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer">Bruxelles</a>, nous vous accompagnons durablement pour optimiser votre site web et vos stratégies marketing. Notre engagement ? Un partenariat continu, enrichi de conseils stratégiques, pour aligner vos outils numériques aux dernières tendances.
+          </p>       
+        </div>
+      </div>
+    </section>
+    <section class="pt-2 px-9 lg:px-20 md:py-1 max-w-5xl xl:max-w-7xl mx-auto">
+      <div class="container max-w-7xl mx-auto lg:px-4 xl:max-w-5xl  ">
+        <div class="container mx-auto py-8  md:py-16 lg:pb-10 lg:py-0 ">
+          <h3 class="text-3xl md:text-center md:text-5xl  lg:text-center mb-4 w-full lg:text-5xl font-semibold leading-tight text-gray-800 tracking-tighter">
+            Nos dernières réalisations
+          </h3>
+          <h4 class="text-left text-sm md:text-center md:text-lg lg:text-xl font-normal text-gray-500">Une vitrine de nos créations web les plus récentes, reflétant notre passion et notre expertise.
+          </h4>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-10">
+          <div class="space-y-2 xl:space-y-4">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Creation-dune-version-PC-dun-site-web-.jpg" alt="Site web de la société Ponceuse Pro" class="object-cover h-52 border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Onepage, Identité de marque, Responsive design</p>
+            <a href="#" class="tracking-tight block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">Ponceuse Pro</a>
+          </div>
+    
+          <div class="space-y-2 xl:space-y-4">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Creation-dune-version-PC-dun-site-web-1 (1).jpg" alt="Site web de la société Facility Plus" class="object-cover h-52 border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Conception template, Identité de marque, Responsive design</p>
+            <a href="#" class="block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">Facility Plus</a>
+          </div>
+    
+          <div class="space-y-2 xl:space-y-4">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Version-PC-dun-site-web-cree-.jpg" alt="Site web de la société Bayer Projecten" class="object-cover h-52  border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Conception template, Identité de marque, Branding</p>
+            <a href="#" class="tracking-tight block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">Bayer Projecten</a>
+          </div>
+    
+          <div class="space-y-2 xl:space-y-4">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Logo-HomeParquet.jpg" alt="Logo de la société Home Parquet" class="object-cover h-52 border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Design Graphique, Identité Visuelle, Branding</p>
+            <a href="#" class="tracking-tight block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">Logo Home Parquet</a>
+          </div>
+    
+          <div class="space-y-2 xl:space-y-4">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Logo-ACS.jpg" alt="Logo de la société Ac Solutions" class="object-cover h-52 border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Design Graphique, Identité Visuelle, Branding</p>
+            <a href="#" class="tracking-tight block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">Logo AC Solutions</a>
+          </div>
+    
+          <div class="space-y-2 xl:space-y-4 mb-10 md:mb-20">
+            <div class="p-1 overflow-hidden border rounded-3xl object-cover">
+              <img src="image/Logo-SkyLive.jpg" alt="Logo de la société SkyLive" class="object-cover h-52 border shadow-2xl rounded-2xl hover:opacity-75 transition ease-in-out duration-300">
+            </div>
+            <p class="font-normal text-gray-400 text-sm">Design Graphique, Identité Visuelle, Branding</p>
+            <a href="#" class="tracking-tight block font-semibold text-gray-700 text-xl md:text-xl hover:text-blue-600 transition ease-in-out duration-300">SKY Live</a>
+          </div>
+        </div>
+        <div class="flex justify-center mt-1 mb-5 md:mb-10">
+          <a href="portfolio.html" class="px-6 py-2 md:px-8 md:py-3 flex items-center gap-3 font-medium text-blue-900 text-xl border-2 border-blue-900 rounded-md hover:bg-blue-900 hover:text-white transition ease-linear duration-300">
+            Voir toutes nos réalisations
+            <i data-feather="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="px-8 py-12 mx-auto md:px-12 lg:px-32 max-w-7xl">
+        <div class="flex flex-col w-full" x-data="{
+            skip: 1,
+            atBeginning: false,
+            atEnd: false,
+            next() {
+                this.to((current, offset) => current + (offset * this.skip))
+            },
+            prev() {
+                this.to((current, offset) => current - (offset * this.skip))
+            },
+            to(strategy) {
+                let slider = this.$refs.slider
+                let current = slider.scrollLeft
+                let offset = slider.firstElementChild.getBoundingClientRect().width
+                slider.scrollTo({ left: strategy(current, offset), behavior: 'smooth' })
+            },
+            focusableWhenVisible: {
+                'x-intersect:enter'() {
+                    this.$el.removeAttribute('tabindex')
+                },
+                'x-intersect:leave'() {
+                    this.$el.setAttribute('tabindex', '-1')
+                },
+            },
+            disableNextAndPreviousButtons: {
+                'x-intersect:enter.threshold.05'() {
+                    let slideEls = this.$el.parentElement.children
+                    // If this is the first slide.
+                    if (slideEls[0] === this.$el) {
+                        this.atBeginning = true
+                    // If this is the last slide.
+                    } else if (slideEls[slideEls.length-1] === this.$el) {
+                        this.atEnd = true
+                    }
+                },
+                'x-intersect:leave.threshold.05'() {
+                    let slideEls = this.$el.parentElement.children
+                    // If this is the first slide.
+                    if (slideEls[0] === this.$el) {
+                        this.atBeginning = false
+                    // If this is the last slide.
+                    } else if (slideEls[slideEls.length-1] === this.$el) {
+                        this.atEnd = false
+                    }
+                },
+            },
+        }">
+        <div class="flex flex-col w-full" aria-labelledby="carousel-label" role="region" tabindex="0" x-on:keydown.left="prev" x-on:keydown.right="next">
+          <h2 class="sr-only" hidden="" id="carousel-label">Carousel</h2>
+          <span class="sr-only" hidden="" id="carousel-content-label">Carousel</span>
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-left">
+              <h2 class="text-3xl md:text-5xl lg:text-5xl font-semibold tracking-tighter">Ils nous ont fait confiance <i class="fa-solid fa-handshake-simple iconhand ml-2"></i> </h2>
+              <p class="text-gray-600 text-base md:text-xl lg:text-xl  ml-1 ">(Ils n'ont pas eu tort...)</p>
+            </div>
+            <div class="inline-flex items-center space-x-2 lg:px-2">
+              <button class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400" :class="{ 'opacity-50 ': atBeginning }" :aria-disabled="atBeginning" :tabindex="atEnd ? -1 : 0" x-on:click="prev" tabindex="0">
+                <span aria-hidden="true" class="mx-auto">← </span><span class="sr-only">Skip to previous slide page</span>
+              </button>
+              <button class="flex items-center text-white bg-blue-500 rounded-full hover:bg-blue-600 size-8 focus:bg-blue-400" :class="{ 'opacity-50 ': atEnd }" :aria-disabled="atEnd" :tabindex="atEnd ? -1 : 0" x-on:click="next" tabindex="0">
+                <span aria-hidden="true" class="mx-auto">→ </span><span class="sr-only">Skip to next slide page</span>
+              </button>
+            </div>
+          </div>
+            <ul class="flex w-full gap-3 mt-4 overflow-x-scroll scrollbar-discrete snap-mandatory snap-x rounded-2xl" role="listbox" aria-labelledby="carousel-content-label" tabindex="0" x-ref="slider">
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Ariane Forestier</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Directrice de communication
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Digital Dreamer a non seulement crée notre site internet mais a également réinventé notre identité digitale, nous permettant d'atteindre un taux d'engagement sans précédent. Leur sens du détail et leur expertise en marketing digital nous ont permis de nous distinguer significativement.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Matthieu Lefèvre</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Gérant de LuxeVoyages
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4 mb-6">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Depuis que Digital Dreamer a refait notre site, nous avons une augmentation de 120% de nos réservations en ligne. Leur expertise en création de site web, combinée à des stratégies de marketing digital sur mesure, a fait toute la différence.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Hélene Girard</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        FinTech Solutions
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      L'approche de Digital Dreamer en création de site internet a transformé notre manière de communiquer avec nos clients, augmentant notre engagement client de 80%. Leur compétence en webdesign et la créativité de leur graphistqe ont été déterminants.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>  <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Félix Vallon</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Créateur de mode
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Le travail de Digital Dreamer a propulsé notre boutique en ligne à un niveau supérieur, avec une augmentation de 200% des visites. Leur excellence en création de site web et en conseil marketing a été essentielle. Je recommande vivement cette agence web dynamique de Bruxelles.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Séverine Dupont</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Responsable commerciale chez BioHealth
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Notre collaboration avec Digital Dreamer a quadruplé le nombre de leads générés en trois mois. Leur expertise en création de site internet, alliée à une stratégie de marketing digital efficace, à été un véritable accélérateur pour notre croissance.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Thibault Mercier</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Entrepreneur en Tech
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      L'intervention de Digital Dreamer a été déterminante pour le lancement de notre start-up. Leur maitrise en création de site web et l'apport de leur graphiste ont apporté une valeur inestimable. Leur agence à Bruxelles est désormais notre partenaire de confiance. 
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>  <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Anouk De Bruyne</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Directrice artistique chez ArtVisio
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Garce à Digital Dreamer, notre galerie en ligne a atteint une audience internationale. Leur savoir-faire en création de site internet, couplé à des compétences exceptionelles en webdesign, nous a permis de nous démarquer dans un marché compétitif.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Emilien Rocher</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Co-fondateur de TechInnov
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Digital Dreamer a quintuplé notre trafic en six mois grace à leur expertise en création de site web. Leur talent en webdesign et en marketing digital, associé à l'oeil artistique de leur graphiste, a révolutionné notre présence en ligne. Un partenaire incontournable à Bruxelles pour se distinguer.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Lisbeth Van Houten</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        Responsable chez EcoClean
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Notre collaboration avec l'agence web Digital Dreamer a transformé notre site internet doublant notre taux de conversion. Leur approche unique en matière de webdesign a rendu notre site plus engageant et performant. Un chois exceptionnel à Bruxelles.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+              <li class="p-2 border shrink-0 snap-start bg-gray-50 rounded-3xl" role="option" x-bind="disableNextAndPreviousButtons">
+                <figure class="relative flex flex-col justify-between h-full max-w-xs p-6 bg-white border shadow-lg rounded-2xl">
+                  <figcaption class="relative flex flex-col justify-between">
+                    <img alt="Icône de bulle de discussion pour avis client" src="image/chat.png" class="object-cover mx-auto rounded-full size-14 ">
+                    <div class="mt-4">
+                      <div class="font-medium text-gray-900">Gaspard Leclerc</div>
+                      <div class="mt-1 text-sm text-gray-500">
+                        PDG  de GourmetDelight
+                      </div>
+                    </div>
+                  </figcaption>
+                  <blockquote class="mt-4">
+                    <p class="text-base font-normal uniform-spacing text-gray-500">
+                      Avec Digital Dreamer, notre site de vente en ligne a vu ses ventes augmenter de 150%. Leur expertise en création de site web et en stratégies de marketing digital a été cruciale. Leur équipe à Bruxelles est à l'écoute et très professionnelle.
+                    </p>
+                  </blockquote>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+<section class="py-16">
+  <div class="mx-auto max-w-4xl px-10 md:px-20  lg:px-20 ">
+    <div
+      class="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-600 flex flex-col items-center"
+    >
+      <div class="block text-center mb-8">
+        <h2
+          class="font-manrope text-2xl md:text-3xl lg:text-4xl md:font-light lg:font-thin  text-white font-semibold leading- lg:mb-2"
+        >
+          Vous réfléchissez à une interface ou une stratégie digitale ?
+        </h2>
+       
+      </div>
+      <a
+        href="#"
+        class="flex items-center gap-2 bg-white rounded-lg shadow-sm md:text-xl md:font-medium lg:text-2xl text-blue-600 font-semibold py-3 px-6 hover:bg-blue-600 hover:text-white border-2 border-white transition ease-linear duration-300 mt-4"
+        >Parlons-en !
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show'); 
+  });
+}
+</script>
+  </body>
+  <footer class="mt-8 bg-base-200 pt-9">
+    <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+      <div class="flex flex-col justify-between gap-8 sm:px-[18px] md:flex-row md:px-10">
+        <div class="md:w-1/3 lg:w-1/3">
+          <p class="text-xl md:text-lg lg:text-sm font-medium text-gray-700">À propos de nous</p>
+          <p class="mt-[18px] text-sm md:text-sm lg:text-base font-normal text-gray-700/80">
+            Digital Dreamer, basée à Schaerbeek, est votre partenaire de confiance à Bruxelles pour des solutions web créatives et efficaces. Nous offrons une expertise en création de sites web et en marketing digital, adaptée à chaque projet pour enrichir votre présence en ligne.
+          </p>
+          <div class="mt-[18px] flex gap-4">
+              <img alt="Logo Google Partner" loading="lazy" width="200" height="100" src="image/PartnerBadge-Horizontal3-removebg-preview.png" />
+          </div>
+        </div>
+          <div class="md:w-1/3 flex flex-col gap-6 lg:w-1/3">
+          <div class="flex">
+            <div class="hidden md:flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+              <i class="fa-solid fa-phone "></i>
+            </div>
+            <div class="md:ml-[18px] lg:ml-[18px]">
+              <p class="font-Inter text-base md:text-sm font-medium text-gray-700">Téléphone :</p>
+              <a href="tel:+32490358004" class="font-Inter text-sm md:text-xs text-gray-700">+32 (0) 490 35 80 04</a>
+            </div>
+          </div>
+            <div class="flex">
+            <div class="hidden md:flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+              <i class="fa-solid fa-envelope"></i>            
+            </div>
+            <div class="md:ml-[17px] lg:ml-[18px]">
+              <p class="font-Inter text-base md:text-sm font-medium text-gray-700">Adresse électronique :</p>
+              <a href="mailto:info@ko-ordinate.be" class="font-Inter md:text-xs text-sm text-gray-700">info@ko-ordinate.be</a>
+            </div>
+          </div>
+            <div class="flex">
+            <div class="hidden md:flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="md:ml-[26px] lg:ml-[18px]">
+              <p class="font-Inter text-base md:text-sm font-medium text-gray-700">Adresse :</p>
+              <a 
+                href="https://maps.app.goo.gl/hEdCitDUmHFraqhF7" 
+                target="_blank" 
+                class="font-Inter md:text-xs text-sm text-gray-700"
+              ><p>
+                Rue Anatole France 119, 1030 <lg:br>Schaerbeek</p>
+              </a>
+            </div>
+          </div>
+            <div class="flex">
+            <div class="hidden md:flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="md:ml-[18px] lg:ml-[18px]">
+              <p class="font-Inter text-base md:text-sm font-medium text-gray-700 mb-1 ">Heures d'ouverture :</p>
+              <p class="font-Inter md:text-xs text-sm text-gray-700 mb-1">Lundi – Vendredi : 9h30 – 18h</p>
+              <p class="font-Inter md:text-xs text-sm text-gray-700">Mercredi – Samedi : 9h30 – 14h</p>
+            </div>
+          </div>
+        </div>
+          <div class=" flex w-full flex-col justify-between text-gray-700 sm:flex-row md:mt-0 md:w-1/3 lg:w-1/3">
+          <div>
+            <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Nos services</p>
+            <ul class="divide-y divide-gray-300">
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="siteweb.html">Création de site web</a>
+              </li>
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="creationlogo.html">Création de logo</a>
+              </li>
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="referencement.html">Référencement de sites web</a>
+              </li>
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="hebergement.html">Hébergement de sites</a>
+              </li>
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="emailing.html">Gestion emailing</a>
+              </li>
+              <li class="mt-[10px] pt-[10px]">
+                <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="video.html">Réalisation de vidéos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+        <hr class="mt-[30px] text-gray-700" />
+      <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+        <p class="text-[10px] font-normal text-gray-700 md:text-[12px]">
+          © Digital Dreamer SRL 2024. Tous droits réservés | Partenaire digital
+        </p>
+      </div>
+    </div>
+</footer>
+</html>

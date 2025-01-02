@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boostez votre présence en ligne avec des stratégies digitales sur mesure et des sites web innovants. Nous vous aidons à atteindre vos objectifs grâce à des solutions adaptées à votre entreprise">
+    <link rel="stylesheet" href="services.css"> 
+    <title>Communication et présence digital sur mesures | Digital Dreamer</title>
+</head>
+<body class="bg-gray-50">
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <div class="border-b border-gray-300 bandelette">
+      <div class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap py-1.5 flex-col md:flex-row items-center">
+          <div class="flex items-center flex-shrink-0 ml-4 mr-4">
+            <img src="image/icons8-courrier-16.png" alt="Logo d'adresse Mail" class="w-7 h-7 p-1 bg-white">
+            <span class="ml-2 text-base">info@ko-ordinate.be</span>
+          </div>
+          <div class="flex items-center flex-shrink-0 mr-4">
+            <img src="image/icons8-téléphone-16.png" alt="Logo de téléphone" class="w-7 h-7 p-1 bg-white">
+            <span class="ml-2 text-base">+32 (0) 490 35 80 04</span>
+          </div>
+          <nav class="ml-auto flex flex-wrap items-center text-base justify-end">
+            <span class="text-base mr-4 text-gray-800">Votre site internet à 500€ !</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <header class="custom-header text-gray-700 font-normal bg-white shadow-md sticky top-0 z-50">
+      <div class="custom-container mx-auto flex flex-wrap md:flex-row items-center">
+        <a href="index.html" class="custom-logo flex title-font font-medium items-center text-gray-900 my-2 md:mb-0">
+          <img src="image/logodigital.png" alt="Logo Digital Dreamer" class="custom-logo-image ml-3 h-16 w-auto">
+        </a>
+        <nav class="custom-nav md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center space-x-4">
+          <a href="index.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Accueil</a>
+          <div class="custom-dropdown">
+            <a href="services.html" class="custom-nav-link custom-services-link font-medium text-lg hover:text-blue-800">Services <i class="fa-solid fa-chevron-down fa-xs" style="font-size: 9px;"></i></a>
+            <div class="custom-dropdown-content">
+              <a href="siteweb.html"><i class="fa-regular fa-window-maximize"></i> Création de site</a>
+              <a href="creationlogo.html"><i class="fa-solid fa-swatchbook"></i> Création de logo</a>
+              <a href="referencement.html"><i class="fa-solid fa-chart-line"></i> Référencement de sites</a>
+              <a href="hebergement.html"><i class="fa-solid fa-window-restore"></i> Hébergement web</a>
+              <a href="video.html"><i class="fa-solid fa-video"></i> Réalisation de vidéo</a>
+              <a href="emailing.html"><i class="fa-regular fa-calendar-days"></i> Gestion emailing</a>
+            </div>
+          </div>
+          <a href="agence.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Agence</a>
+          <a href="portfolio.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Portfolio</a>
+          <a href="contact.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Contact</a>
+        </nav>
+        <div class="navbar-container flex items-center ml-auto">
+          <a href="contact.html" class="custom-contact-button text-base px-2 text-blue-900 border-2 border-gray-300 rounded-lg hover:bg-blue-900 hover:text-white hover:border-blue-900 transition ease-linear duration-300 mr-2">
+            <span class="button-text">Nous contacter</span>
+            <i class="fa-solid fa-phone phone-icon"></i>
+          </a>
+          <button id="menu-button" class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="index.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Accueil</a>
+          <div class="custom-dropdown">
+            <a href="services.html" class="custom-nav-link custom-services-link font-normal text-lg hover:text-blue-800">Services</a>
+          </div>
+          <a href="agence.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Agence</a>
+          <a href="portfolio.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Portfolio</a>
+          <a href="contact.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Contact</a>
+        </nav>
+      </div>
+    </header>
+    
+
+      <!-- ///////////////// -->
+      <!-- <section class="py-8 bg-gray-50">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center flex-col lg:flex-row md:mt-">
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-manrope text-5xl text-gray-900 font-bold leading-[4rem] mb-7 text-center lg:text-left">
+                        Our leading, strong & creative team
+                    </h2>
+                    <p class="text-lg text-gray-500 mb-16 text-center lg:text-left">
+                        These people work on making our product best.
+                    </p>
+                    <button class="cursor-pointer py-3 px-8 w-60 bg-indigo-600 text-white text-base font-semibold transition-all duration-500 block text-center rounded-full hover:bg-indigo-700 mx-auto lg:mx-0">
+                        Join our team
+                    </button>
+                </div>
+                <div class="w-full lg:w-1/2 lg:mt-0 md:mt-40 mt-16 max-lg:max-w-2xl">
+                    <div class="grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-3 gap-8">
+                        <img src="https://pagedone.io/asset/uploads/1696238644.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0" />
+                        <img src="https://pagedone.io/asset/uploads/1696238665.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mx-auto" />
+                        <img src="https://pagedone.io/asset/uploads/1696238684.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover md:mt-20 mx-auto min-[450px]:mr-0 md:ml-0" />
+                        <img src="https://pagedone.io/asset/uploads/1696238702.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0 md:ml-auto" />
+                        <img src="https://pagedone.io/asset/uploads/1696238720.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover md:-mt-20 mx-auto min-[450px]:mr-0 md:mx-auto" />
+                        <img src="https://pagedone.io/asset/uploads/1696238737.png" alt="Team tailwind section"
+                            class="w-44 h-56 rounded-2xl object-cover mx-auto min-[450px]:ml-0 md:mr-0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+          
+          <h1 class="mt-10 mb-4 text-4xl font-extrabold tracking-tigh leading-tight  text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Accompagnement Sur-Mesure pour Votre Projet Digital</h1>
+          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">            Sites web sur <span class="clé">Mesure</span> pour une <span class="clé">Stratégie Digitale Réussie</span> <br/>et une présence en ligne <span class="clé">Solide</span>
+          </p> -->
+          <!-- <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"> -->
+              <!-- <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                  Learn more
+                  <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </a> -->
+              <!-- <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                  <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+                  Watch video
+              </a>   -->
+          <!-- </div> -->
+          <!-- <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
+              <span class="font-semibold text-gray-400 uppercase">FEATURED IN</span>
+              <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+                <ul class="text-list scroll-list">
+                  <li>&#9733; UX/UI Design</li>
+                  <li>&#9733; Responsive Design</li>
+                  <li>&#9733; Logo Design</li>
+                  <li>&#9733; Maintenance and Support</li>
+                  <li>&#9733; Performance Optimization</li>
+                  <li>&#9733; CMS Integration</li>
+              </ul>
+            </div>
+          </div> 
+      </div>
+  </section>     -->
+<!-- ___________________________________________________________________________________________________ -->
+<!-- <section class="bg-blue-900 dark:text-gray-800">
+	<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between max-w-5xl">
+		<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+			<img src="image/_Pngtree_concept_team_work_meeting_illlustration_5356573__2_-removebg.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+		</div>
+		<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+			<h1 class="text-white text-5xl font-bold leading-none sm:text-5xl">Accompagnement Sur-Mesure pour Votre Projet Digital
+				<span class="dark:text-violet-600">senectus</span>erat pharetra
+			</h1>
+			<p class="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
+				<br class="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem
+			</p> -->
+			<!-- <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+				<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded dark:bg-violet-600 dark:text-gray-50">Suspendisse</a>
+				<a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Malesuada</a>
+			</div> -->
+		<!-- </div>
+	</div>
+</section> -->
+<section class="dark:bg-gray-900 ">
+  <div class="grid max-w-5xl pl-7 pr-4 md:px-8 pt-8 mx-auto md:gap-8 xl:gap-0 py-8 md:py-8  lg:py-12 md:grid-cols-12">
+      
+      <!-- Image à gauche avec espacement -->
+      <div class="hidden md:col-span-5 md:flex  lg:mr-8 order-last md:order-first">
+          <img src="image/design-plat-concept-systeme-gestion-contenu.png" alt="Illustration d'un ordinateur avec des logos de CMS, référencement, vidéo et autres services numériques">
+      </div>  
+      
+      <!-- Textes à droite -->
+      <div class="mr-auto place-self-center md:col-span-7 order-first md:order-last">
+          <h1 class="max-w-2xl mb-4 text-balance font-semibold md:font-medium tracking-tight leading-none text-4xl md:text-4xl lg:text-5xl xl:text-6xl ">
+              Services sur-mesure pour votre projet digital</h1>
+          <p class="max-w-2xl mb-2 text-balance font-normal text-gray-900 lg:mb-4 md:text-lg lg:text-xl">
+              De la stratégie à la mise en œuvre, nous vous accompagnons avec expertise à chaque étape.
+          </p>
+          <ul class="max-w-2xl font-normal text-gray-900 md:mb-8 md:text-lg lg:text-xl dark:text-gray-900 list-none">
+            <li class="flex items-center">
+                <i class="fa-solid fa-check text-blue-400 mr-2"></i> Expert dans le marketing digital.
+            </li>
+            <li class="flex items-center">
+                <i class="fa-solid fa-check text-blue-400 mr-2"></i> Expert dans la création de site web.
+            </li>
+            <li class="flex items-center">
+                <i class="fa-solid fa-check text-blue-400 mr-2"></i> Expert dans la communication et présence digital.
+            </li>
+        </ul>
+      </div>              
+  </div>
+</section>
+
+
+
+<!-- __________________________________________________________________________________________________________ -->
+
+    <section>
+      <div class=" mx-auto md:max-w-2xl lg:max-w-4xl xl:max-w-5xl lg:px-2 xl:px-4 ">
+        <div class="md:px-4 flex flex-wrap">
+            <!-- Partie gauche -->
+            <div class="hidden md:block md:w-4/6 lg:w-2/3 xl:w-4/5 "> 
+                <h2 class="w-full text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-3 md:mb-4  xl:mb-6 leading-tight ">Services complets pour une présence en ligne impeccable</h2>
+                <p class="text-sm md:text-sm lg:text-base xl:text-lg font-normal leading-snug md:pr-2 xl:pr-7">
+                  Chez nous, la passion anime chaque projet. « We love & know what we do! » incarne notre essence. Notre équipe pluridisciplinaire excelle dans tous les aspects du marketing digital, transformant chaque projet en une expérience unique.</p>
+                  <p class="text-sm md:text-sm lg:text-base xl:text-lg font-normal leading-snug mt-1 lg:mt-3 md:pr-2 xl:pr-7">
+                    Rejoignez-nous et découvrez comment notre savoir-faire peut faire briller votre présence en ligne.</p>
+            </div>
+            <!-- Partie droite -->
+            <div class="w-full md:w-2/6  lg:w-1/3  xl:w-1/5 md:pl-4 flex flex-col justify-center items-center ">
+                <p class="mb-2 text-xs md:text-xs text-center lg:text-sm  font-medium ">+ de 100 Clients Heureux Utilisent Nos Services</p>
+                <div class="bg-blue-300 border  border-blue-400 text-black text-center font-semibold text-2xl md:text-3xl py-4 px-6 md:py-4 md:px-6  xl:py-7 xl:px-8 rounded-2xl">
+                    +12 ans d'Expériences
+                </div>
+                <p class="text-xs md:text-sm lg:text-sm text-center mt-2 font-medium">+ de 1500 Projets Complétés</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    <!-- <section>
+      <div class="px-32">
+        <div class="flex justify-center">
+          <div>
+            <h2 class="text-6xl font-semibold mb-5 leading-tight text-center">Expertise Pluridisciplinaire</h2>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="py-8 md:py-12  relative">
+      <div class="w-full max-w-2xl lg:max-w-4xl xl:max-w-5xl px-6 md:px-4  xl:px-8 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              <!-- Première ligne de cadres -->
+               
+              <div class="flex items-center py-2 md:py-0 flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/alvaro-reyes-KxVlKiqQObU-unsplash (1).jpg" alt="Développeur web constituant la maquette d'un site web">
+                  </div>
+                  <div class="flex items-center justify-between w-full">
+                          <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Création de site web</h4>
+                      <a href="siteweb.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                        </a>                    
+                  </div>
+              </div>
+              <div class="flex items-center py-2 md:py-0 flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/nick-adams-yTWq8n3-4k0-unsplash.jpg" alt="Representaion de logo et affiches imprimés à coté d'un ordinateur">
+                </div>
+                  <div class="flex items-center justify-between w-full">
+                          <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Création de logo</h4>
+                      <a href="creationlogo.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                      </a>
+                    
+                  </div>
+              </div>
+              <div class="flex items-center py-2 md:py-0 flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/pexels-kindelmedia-7688460.jpg" alt="Groupe de professionnels élaborant une stratégie marketing digital autour d'une table">
+                </div>
+                    <div class="flex items-center justify-between w-full">
+                      <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Référencement de site web</h4>
+                      <a href="referencement.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                      </a>
+                  </div>
+              </div>
+  
+              <!-- Seconde ligne de cadres -->
+              <div class="flex items-center py-2 md:py-0 flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/growtika-WELyMatW3mw-unsplash.jpg" alt="Serveurs dans un nuage numérique connectés à une puce, symbolisant le cloud computing et l'hébergement web">
+                </div>
+                  <div class="flex items-center justify-between w-full">
+                          <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Hébergement web</h4>
+                      <a href="hebergement.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                      </a>
+                  </div>
+              </div>
+              <div class="flex items-center py-2 md:py-0  flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/george-kroeker-96bacP6Vba8-unsplash.jpg" alt="Drone aérien capturant des vidéos professionnelles depuis le ciel">
+                </div>
+                  <div class="flex items-center justify-between w-full">
+                          <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Réalisation de vidéo</h4>
+                      <a href="video.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                      </a>
+                  </div>
+              </div>
+              <div class="flex items-center py-2 md:py-0 flex-col gap-6 md:gap-8 w-full">
+                <div class="p-1 overflow-hidden border rounded-3xl block w-full max-w-md h-64 mx-auto">
+                  <img class="w-full h-full object-cover rounded-3xl" src="image/philip-oroni-7rMD7zh5SKo-unsplash.jpg" alt="Illustration d'une enveloppe rose représentant le service de gestion d'emailing">
+                </div>
+                  <div class="flex items-center justify-between w-full">
+                          <h4 class="text-xl font-manrope font-semibold text-gray-900 mb-1">Gestion emailing</h4>
+                      <a href="emailing.html" class="border border-blue-700 py-2 px-3.5 rounded-full transition-all duration-300 group-hover:bg-blue-700">
+                        <svg class="stroke-blue-700 transition-all duration-300 group-hover:stroke-white"
+                             xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                             fill="none">
+                            <path
+                                d="M9.62553 4L13.6664 8.0409M13.6664 8.0409L9.62553 12.0818M13.6664 8.0409L1.6665 8.0409"
+                                stroke="" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+                              
+  <section class="py-10 md:px-9 lg:py-20"> <!-- Réduit le padding vertical -->
+    <div class="mx-auto md:max-w-3xl  lg:max-w-4xl  px-4 sm:px-6 lg:px-8"> <!-- Réduit la largeur maximale -->
+      <div class="lg:py-10 lg:px-12 p-6 rounded-2xl bg-gradient-to-r from-blue-900 to-blue-600 flex flex-col items-center">
+        <div class="text-center mb-5 lg:mb-6">
+          <h2 class="flex items-center justify-center font-normal text-2xl md:text-4xl text-white md:font-normal lg:font-semibold mb-4 leading-snug md:leading-snug"> <!-- Réduit la taille du texte -->
+            Lancez votre projet numérique avec Digital Dreamer ?
+            <div class="hidden lg:block">
+            <svg width="80" height="80"  viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <!-- Réduit la taille du SVG -->
+              <g clip-path="url(#clip0_231_793)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M50 0H200V50V150L150 200L150 50H0L50 0ZM0 165.067V100L65.067 100L0 165.067ZM100 200H35.7777L100 135.778L100 200Z" fill="url(#paint0_linear_231_793)"/>
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_231_793" x1="177" y1="-9.23648e-06" x2="39.5" y2="152.5" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#B0B9FF"/>
+                  <stop offset="1" stop-color="#E7E9FF"/>
+                </linearGradient>
+                <clipPath id="clip0_231_793">
+                  <rect width="200" height="200" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+            </div>
+          </h2>
+          <div class="hidden md:block">
+          <p class="text-white  text-lg font-light md:font-light md:text-lg lg:text-xl leading-relaxed md:leading-relaxed lg:leading-loose"> <!-- Réduit la taille du texte -->
+            Confiez la conception de votre site web à une équipe experte et innovante. Chez Digital Dreamer, nous mettons notre savoir-faire au service des professionnels et PME pour maximiser leur présence en ligne. Contactez-nous dès aujourd’hui pour donner vie à votre projet !          </p>
+        </div>
+        <div class="md:hidden">
+          <p class="text-white  text-base font-light md:font-normal md:text-xl leading-relaxed "> <!-- Réduit la taille du texte -->
+            Confiez la conception de votre site web à une équipe experte et innovante pour maximiser votre présence en ligne.
+            <!-- Notre expertise au service de votre présence en ligne. -->
+          </p>        
+          </div>
+        </div>
+        <a
+      href="contact.html"
+      class="mt-auto flex items-center gap-2 bg-white rounded-2xl shadow-sm md:text-xl text-blue-700 font-bold py-4 px-8 hover:bg-blue-700 hover:text-white border-2 white transition ease-linear duration-300"
+    >
+      Contactez-nous !
+    </a>
+      </div>
+    </div>
+  </section>
+  <script>
+     // Script pour basculer le menu mobile
+  const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show'); // Basculer la classe 'show'
+  });
+}
+  </script>
+</body>
+<footer class="mt-8 bg-base-200 pt-9">
+  <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+    <div class="flex flex-col justify-between gap-8 sm:px-[18px] md:flex-row md:px-10">
+      <div class="md:w-[316px]">
+        <p class="text-xl  font-medium text-gray-700">À propos de nous</p>
+        <p class="mt-[18px] text-base font-normal text-gray-700/80">
+          Digital Dreamer, basée à Schaerbeek, est votre partenaire de confiance à Bruxelles pour des solutions web créatives et efficaces. Nous offrons une expertise en création de sites web et en marketing digital, adaptée à chaque projet pour enrichir votre présence en ligne.
+        </p>
+        <div class="mt-[18px] flex gap-4">
+            <img alt="Logo Google Partner" loading="lazy" width="200" height="100" src="image/PartnerBadge-Horizontal3-removebg-preview.png" />
+        </div>
+      </div>
+        <div class="md:w-[316px] flex flex-col gap-6">
+        <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-phone "></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Téléphone :</p>
+            <a href="tel:+32490358004" class="font-Inter text-sm text-gray-700">+32 (0) 490 35 80 04</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-envelope"></i>            
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse électronique :</p>
+            <a href="mailto:info@ko-ordinate.be" class="font-Inter text-sm text-gray-700">info@ko-ordinate.be</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse :</p>
+            <a 
+              href="https://maps.app.goo.gl/hEdCitDUmHFraqhF7" 
+              target="_blank" 
+              class="font-Inter text-sm text-gray-700"
+            >
+              Rue Anatole France 119, 1030 <br>Schaerbeek
+            </a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700 mb-1 ">Heures d'ouverture :</p>
+            <p class="font-Inter text-sm text-gray-700 mb-1">Lundi – Vendredi : 9h30 – 18h</p>
+            <p class="font-Inter text-sm text-gray-700">Mercredi – Samedi : 9h30 – 14h</p>
+          </div>
+        </div>
+      </div>
+        <div class="mt-6 flex w-full flex-col justify-between text-gray-700 sm:flex-row md:mt-0 md:max-w-[341px]">
+        <div>
+          <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Nos services</p>
+          <ul class="divide-y divide-gray-300">
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="siteweb.html">Création de site web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="creationlogo.html">Création de logo</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="referencement.html">Référencement de sites web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="hebergement.html">Hébergement de sites</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="emailing.html">Gestion emailing</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="video.html">Réalisation de vidéos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <hr class="mt-[30px] text-gray-700" />
+    <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+      <p class="text-[10px] font-normal text-gray-700 md:text-[12px]">
+        © Digital Dreamer SRL 2024. Tous droits réservés | Partenaire digital
+      </p>
+    </div>
+  </div>
+</footer>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez notre agence de marketing digital : une équipe passionnée et experte en stratégie digitale, création de sites web, et communication. Ensemble, nous bâtissons des solutions innovantes pour propulser votre entreprise vers le succès.">
+    <link rel="stylesheet" href="agence.css"> 
+    <title>Équipe Experte en Marketing Digital | Digital Dreamer</title>
+</head>
+<body class="bg-gray-50">
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <div class=" border-b border-gray-300">
+      <div class="border-b border-gray-300 bandelette">
+        <div class="text-gray-600 body-font">
+          <div class="container mx-auto flex flex-wrap py-1.5 flex-col md:flex-row items-center">
+            <div class="flex items-center flex-shrink-0 ml-4 mr-4">
+              <img src="image/icons8-courrier-16.png" alt="Logo d'adresse mail" class="w-7 h-7 p-1 bg-white">
+              <span class="ml-2 text-base">info@ko-ordinate.be</span>
+            </div>
+            <div class="flex items-center flex-shrink-0 mr-4">
+              <img src="image/icons8-téléphone-16.png" alt="Logo de téléphone" class="w-7 h-7 p-1 bg-white">
+              <span class="ml-2 text-base">+32 (0) 490 35 80 04</span>
+            </div>
+            <nav class="ml-auto flex flex-wrap items-center text-base justify-end">
+              <span class="text-base mr-4 text-gray-800">Votre site internet à 500€ !</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+      
+      <header class="custom-header text-gray-700 font-normal bg-white shadow-md sticky top-0 z-50">
+        <div class="custom-container mx-auto flex flex-wrap md:flex-row items-center">
+          <a href="index.html" class="custom-logo flex title-font font-medium items-center text-gray-900 my-2 md:mb-0">
+            <img src="image/logodigital.png" alt="Digital Dreamer" class="custom-logo-image ml-3 h-16 w-auto">
+          </a>
+          <nav class="custom-nav md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center space-x-4">
+            <a href="index.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Accueil</a>
+            <div class="custom-dropdown">
+              <a href="services.html" class="custom-nav-link custom-services-link font-medium text-lg hover:text-blue-800">Services <i class="fa-solid fa-chevron-down fa-xs" style="font-size: 9px;"></i></a>
+              <div class="custom-dropdown-content">
+                <a href="siteweb.html"><i class="fa-regular fa-window-maximize"></i> Création de site</a>
+                <a href="creationlogo.html"><i class="fa-solid fa-swatchbook"></i> Création de logo</a>
+                <a href="referencement.html"><i class="fa-solid fa-chart-line"></i> Référencement de sites</a>
+                <a href="hebergement.html"><i class="fa-solid fa-window-restore"></i> Hébergement web</a>
+                <a href="video.html"><i class="fa-solid fa-video"></i> Réalisation de vidéo</a>
+                <a href="emailing.html"><i class="fa-regular fa-calendar-days"></i> Gestion emailing</a>
+              </div>
+            </div>
+            <a href="agence.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Agence</a>
+            <a href="portfolio.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Portfolio</a>
+            <a href="contact.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Contact</a>
+          </nav>
+          <div class="navbar-container flex items-center ml-auto">
+            <a href="contact.html" class="custom-contact-button text-base px-2 text-blue-900 border-2 border-gray-300 rounded-lg hover:bg-blue-900 hover:text-white hover:border-blue-900 transition ease-linear duration-300 mr-2">
+              <span class="button-text">Nous contacter</span>
+              <i class="fa-solid fa-phone phone-icon"></i>
+            </a>
+            <button id="menu-button" class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="lg:hidden">
+          <nav class="flex flex-col space-y-2 p-4">
+            <a href="index.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Accueil</a>
+            <div class="custom-dropdown">
+              <a href="services.html" class="custom-nav-link custom-services-link font-normal text-lg hover:text-blue-800">Services</a>
+            </div>
+            <a href="agence.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Agence</a>
+            <a href="portfolio.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Portfolio</a>
+            <a href="contact.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section>
+        <div class="px-8  py-12 mx-auto md:px-4 lg:px-20  xl:px-32 max-w-7xl">
+          <div class="grid items-center grid-cols-1 gap-4 list-none md:grid-cols-2 md:gap-7 xl:gap-24 ">
+            <div>
+              <h1 class="text-5xl lg:text-6xl xl:text-7xl  font-semibold tracking-tighter text-blue-950 text-balance">
+                Notre Agence <br/>
+                <span class="text-blue-600 text-4xl lg:text-5xl xl:text-6xl">Marketing Digital</span>
+              </h1>
+              <p class="mt-4 mx-1 leading-relaxed md:leading-tight  lg:leading-snug text-sm xl:text-base font-normal text-gray-600">
+                Au cœur de l’univers numérique, Digital Dreamer émerge comme une <b>agence web</b> avant-gardiste, dédiée à l’excellence en webdesign et solutions digitales. Notre mission ? Transformer vos idées en réalisations remarquables et vous propulser au sommet de votre secteur. <b>Spécialistes de la création de sites</b> internet sur mesure, nous maîtrisons l’art de donner vie à votre vision, en assurant une <b>gestion de contenu</b> efficace, un <b>référencement optimisé</b> et des <b>stratégies de communication marketing</b> ciblées.
+              </p>
+            </div>
+            <div class="p-2 border bg-gray-50 rounded-3xl md:order-first">
+              <div class="h-full overflow-hidden bg-white border shadow-lg rounded-3xl">
+                <img alt="Développeur web travaillant à son bureau dans une agence de marketing digital" class="relative w-full rounded-2xl drop-shadow-2xl" src="image/tyler-franta-iusJ25iYu1c-unsplash.jpg">
+              </div>
+            </div>
+          </div>
+            <div class="pt-20  mx-auto md:px-12 lg:px-32 max-w-7xl">
+              <div class="text-center">
+                <h1 class="text-4xl md:text-4xl font-semibold tracking-tighter text-blue-950 lg:text-5xl ">
+                  Service web proposés </br> par notre agence                  
+                </h1>
+              </div>
+            </div>
+          <dl class="px-4 lg:px-0 grid grid-cols-1 gap-14 md:gap-4 lg:gap-3 mt-12 md:grid-cols-3 text-balance text-center lg:pt-5">
+            <div>
+              <i class="fa-solid fa-laptop-code icon"></i>
+              <dt class="my-4 text-2xl lg:text-3xl font-medium text-gray-900">Création de site web</dt>
+              <dd class="mt-2 text-sm lg:text-base font-normal text-gray-500 text-pretty leading-relaxed md:leading-normal lg:leading-relaxed">
+                Chez Digital Dreamer, nous offrons un service complet de création de sites internet sur mesure pour les professionels de tous les secteurs. Que vous ayez besoin d'un site e-commerce dynamique ou d'une vitrine élégante pour votre entreprise ou association, notre équipe est dédiée à concevoir un espace web à la fois structuré et accueillant.
+              </dd>
+              <button class="py-6 items-center">
+                <a href="siteweb.html" class="text-sm lg:text-lg group items-center mt-4 px-4 py-2 bg-blue-700 text-white rounded transform transition duration-300 ease-in-out hover:bg-blue-900 hover:scale-105">
+                    En savoir plus <i class="fa-solid fa-chevron-right ml-2 opacity-0 transform -translate-x-2 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"></i>
+                </a>
+            </button>
+            </div>          
+            <div>
+              <i class="fa-solid fa-chart-column icon"></i>
+              <dt class="my-4 text-2xl lg:text-3xl font-medium text-gray-900">Référencement</dt>
+              <dd class="mt-2 text-sm lg:text-base font-normal text-gray-500 text-pretty leading-relaxed md:leading-normal lg:leading-relaxed ">
+                L'expertise de Digital Dreamer s'étend au référencement, assurant à votre site web une position de choix dans les résultats des principaux moteurs de recherche. Cette optimisation décuple la visibilité de vos produits et services, offrant une portée considérable à votre activité.
+              </dd>
+              <button class="py-6 items-center">
+                <a href="siteweb.html" class="text-sm lg:text-lg group items-center mt-4 px-4 py-2 bg-blue-700 text-white rounded transform transition duration-300 ease-in-out hover:bg-blue-900 hover:scale-105">
+                    En savoir plus <i class="fa-solid fa-chevron-right ml-2 opacity-0 transform -translate-x-2 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"></i>
+                </a>
+            </button>            </div>
+            <div>
+              <i class="fa-solid fa-wand-magic-sparkles icon"></i>
+              <dt class="my-4 text-2xl lg:text-3xl font-medium text-gray-900">Webdesign</dt>
+              <dd class="mt-2 text-sm lg:text-base font-normal text-gray-500 text-pretty leading-relaxed md:leading-normal lg:leading-relaxed ">
+                L'identité visuelle de votre projet est au coeur de nos préocupations. Notre équipe de graphistes talentueux propose un service de design complet, incluant la création d'un logo sur mesure, l'élaboration d'une charte graphique cohérente et le développement d'un webdesign moderne qui captivera votre audience.
+
+              </dd>
+              <button class="py-6 items-center">
+                <a href="siteweb.html" class="text-sm lg:text-lg group items-center mt-4 px-4 py-2 bg-blue-700 text-white rounded transform transition duration-300 ease-in-out hover:bg-blue-900 hover:scale-105">
+                    En savoir plus <i class="fa-solid fa-chevron-right ml-2 opacity-0 transform -translate-x-2 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0"></i>
+                </a>
+            </button>            
+          </div>
+          </dl>
+        </div>
+      </section>       
+      <section>
+        <div class="px-8 md:py-12 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
+          <div>
+            <h1 class="text-4xl font-semibold tracking-tighter text-gray-900 md:text-5xl text-balance">
+Notre Equipe
+            </h1>
+            
+          </div>
+          <div class="space-y-2">
+            <!-- Première rangée: texte - image - texte -->
+            <div class="grid gap-2 mt-12 md:grid-flow-col-dense md:max-w-7xl md:mx-auto md:grid md:grid-cols-3">
+              <div class="max-w-lg min-w-full mx-auto">
+                <div class="flex h-full">
+                  <div class="flex flex-col items-center justify-center p-8 md:p-3 lg:p-8 border bg-gray-50 rounded-3xl max-w-none">
+                    <i class="fas fa-users text-3xl mb-4"></i> <!-- Icône ajoutée -->
+                    <h2 class="text-xl font-medium text-gray-900 text-center">L'Equipe</h2>
+                    <p class="mt-4 text-sm font-normal text-gray-500 text-center text-pretty">
+                      Notre agence, Digital Dreamer, est un collectif soudé d'une dizaine de talents, unissant compétences internes et externes pour former une symphonie de créativité et d'efficacité.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl md:col-span-1" style="">
+                <img src="image/headway-5QgIuuBxKwM-unsplash.jpg" alt="Équipe d'experts en marketing digital collaborant sur un projet stratégique" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+              <div class="max-w-lg min-w-full mx-auto">
+                <div class="flex h-full">
+                  <div class="flex flex-col items-center justify-center p-8 md:p-6 lg:p-8 border bg-gray-50 rounded-3xl max-w-none">
+                    <i class="fas fa-briefcase text-3xl mb-4"></i> <!-- Icône ajoutée -->
+                    <h2 class="text-xl font-medium text-gray-900 text-center">Dévoués</h2>
+                    <p class="mt-4 text-sm font-normal text-gray-500 text-center text-pretty">
+                      Chez Digital Dreamer, chaque projet est une aventure personnalisée. Nous ne nous contentons pas de livrer un site web; nous bâtissons une solution digitale sur mesure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Deuxième rangée: image - texte - image -->
+            <div class="grid gap-2 md:grid-flow-col-dense md:max-w-7xl md:mx-auto md:grid md:grid-cols-3">
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl lg:col-span-1">
+                <img src="image/balazs-ketyi-b9rPuUQ_YSs-unsplash.jpg" alt="Tablette et smartphone affichant le même site, illustrant la compatibilité multiplateforme" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+              <div class="max-w-lg min-w-full mx-auto">
+                <div class="flex h-full">
+                  <div class="flex flex-col items-center justify-center p-8 md:p-6 lg:p-8 border bg-gray-50 rounded-3xl max-w-none">
+                    <i class="fa-solid fa-user-graduate text-3xl mb-4"></i> <!-- Icône ajoutée -->
+                    <h2 class="text-xl font-medium text-gray-900 text-center">Technologie</h2>
+                    <p class="mt-4 text-sm font-normal text-gray-500 text-center text-pretty">
+                      Nous exploitons les technologies de pointe, comme l'HTML5, le CSS3, et le responsive design, pour offrir des produits non seulement beaux mais aussi fonctionnels.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl md:col-span-1">
+                <img src="image/antonio-janeski-CHVTt0aGbx0-unsplash.jpg" alt="Mains jointes au-dessus d'un bureau, représentant la collaboration et le travail d'équipe" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+            </div>
+            <!-- Troisième rangée: texte - image - texte -->
+            <div class="grid gap-2 md:grid-flow-col-dense md:max-w-7xl md:mx-auto md:grid md:grid-cols-3">
+              <div class="max-w-lg min-w-full mx-auto">
+                <div class="flex h-full">
+                  <div class="flex flex-col items-center justify-center p-8 md:p-6 lg:p-8 border bg-gray-50 rounded-3xl max-w-none">
+                    <i class="fa-solid fa-seedling text-3xl mb-4"></i> <!-- Icône ajoutée -->
+                    <h2 class="text-xl font-medium text-gray-900 text-center">L'environement</h2>
+                    <p class="mt-4 text-sm font-normal text-gray-500 text-center text-pretty">
+                      Digital Dreamer s'efforce de minimiser son empreinte carbone en adoptant des pratiques de travail durables et en encourageant l'utilisation de technologies vertes dans nos projets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="relative h-full p-2 overflow-hidden border rounded-3xl lg:col-span-1">
+                <img src="image/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="Vue du sol de plusieurs gratte-ciel, illustrant l'architecture moderne" class="object-cover h-full border shadow-2xl rounded-2xl">
+              </div>
+              <div class="max-w-lg min-w-full mx-auto">
+                <div class="flex h-full">
+                  <div class="flex flex-col items-center justify-center p-8 md:p-6 lg:p-8 border bg-gray-50 rounded-3xl max-w-none">
+                    <i class="fa-solid fa-rocket text-3xl mb-4"></i> <!-- Icône ajoutée -->
+                    <h2 class="text-xl font-medium text-gray-900 text-center">Culture</h2>
+                    <p class="mt-4 text-sm font-normal text-gray-500 text-center text-pretty">
+                      Ensemble, nous formons une équipe dynamique, dévouée à transformer vos visions digitales en réalités tangibles, tout en restant fidèles à nos valeurs de durabilité et d'innovation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show'); 
+  });
+}
+      </script>
+      
+</body>
+<footer class="mt-8 bg-base-200 pt-9">
+  <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+    <div class="flex flex-col justify-between gap-8 sm:px-[18px] md:flex-row md:px-10">
+      <div class="md:w-[316px]">
+        <p class="text-xl  font-medium text-gray-700">À propos de nous</p>
+        <p class="mt-[18px] text-base font-normal text-gray-700/80">
+          Digital Dreamer, basée à Schaerbeek, est votre partenaire de confiance à Bruxelles pour des solutions web créatives et efficaces. Nous offrons une expertise en création de sites web et en marketing digital, adaptée à chaque projet pour enrichir votre présence en ligne.
+        </p>
+        <div class="mt-[18px] flex gap-4">
+            <img alt="Google partner" loading="lazy" width="200" height="100" src="image/PartnerBadge-Horizontal3-removebg-preview.png" />
+        </div>
+      </div>
+        <div class="md:w-[316px] flex flex-col gap-6">
+        <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-phone "></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Téléphone :</p>
+            <a href="tel:+32490358004" class="font-Inter text-sm text-gray-700">+32 (0) 490 35 80 04</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-envelope"></i>            
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse électronique :</p>
+            <a href="mailto:info@ko-ordinate.be" class="font-Inter text-sm text-gray-700">info@ko-ordinate.be</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse :</p>
+            <a 
+              href="https://maps.app.goo.gl/hEdCitDUmHFraqhF7" 
+              target="_blank" 
+              class="font-Inter text-sm text-gray-700"
+            >
+              Rue Anatole France 119, 1030 <br>Schaerbeek
+            </a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700 mb-1 ">Heures d'ouverture :</p>
+            <p class="font-Inter text-sm text-gray-700 mb-1">Lundi – Vendredi : 9h30 – 18h</p>
+            <p class="font-Inter text-sm text-gray-700">Mercredi – Samedi : 9h30 – 14h</p>
+          </div>
+        </div>
+      </div>
+        <div class="mt-6 flex w-full flex-col justify-between text-gray-700 sm:flex-row md:mt-0 md:max-w-[341px]">
+        <div>
+          <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Nos services</p>
+          <ul class="divide-y divide-gray-300">
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="siteweb.html">Création de site web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="creationlogo.html">Création de logo</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="referencement.html">Référencement de sites web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="hebergement.html">Hébergement de sites</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="emailing.html">Gestion emailing</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="video.html">Réalisation de vidéos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <hr class="mt-[30px] text-gray-700" />
+    <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+      <p class="text-[10px] font-normal text-gray-700 md:text-[12px]">
+        © Digital Dreamer SRL 2024. Tous droits réservés | Partenaire digital
+      </p>
+    </div>
+  </div>
+</footer>
+</html>

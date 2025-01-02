@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/8ed460a316.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css">
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boostez votre stratégie de communication avec nos services d'emailing professionnels. Nous concevons des campagnes personnalisées, optimisées pour maximiser l'engagement, la conversion et renforcer votre relation client.">
+    <link rel="stylesheet" href="emailing.css">
+    <title>Emailing Professionnel - Maximisez Votre Engagement et Vos Conversions | Digital Dreamer</title>
+  </head>
+  <body class="bg-gray-50">
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <div class="border-b border-gray-300 bandelette">
+      <div class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap py-1.5 flex-col md:flex-row items-center">
+          <div class="flex items-center flex-shrink-0 ml-4 mr-4">
+            <img src="image/icons8-courrier-16.png" alt="Logo d'adresse mail" class="w-7 h-7 p-1 bg-white">
+            <span class="ml-2 text-base">info@ko-ordinate.be</span>
+          </div>
+          <div class="flex items-center flex-shrink-0 mr-4">
+            <img src="image/icons8-téléphone-16.png" alt="Logo de téléphone" class="w-7 h-7 p-1 bg-white">
+            <span class="ml-2 text-base">+32 (0) 490 35 80 04</span>
+          </div>
+          <nav class="ml-auto flex flex-wrap items-center text-base justify-end">
+            <span class="text-base mr-4 text-gray-800">Votre site internet à 500€ !</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <header class="custom-header text-gray-700 font-normal bg-white shadow-md sticky top-0 z-50">
+      <div class="custom-container mx-auto flex flex-wrap md:flex-row items-center">
+        <a href="index.html" class="custom-logo flex title-font font-medium items-center text-gray-900 my-2 md:mb-0">
+          <img src="image/logodigital.png" alt="Logo Digital Dreamer" class="custom-logo-image ml-3 h-16 w-auto">
+        </a>
+        <nav class="custom-nav md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center space-x-4">
+          <a href="index.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Accueil</a>
+          <div class="custom-dropdown">
+            <a href="services.html" class="custom-nav-link custom-services-link font-medium text-lg hover:text-blue-800">Services <i class="fa-solid fa-chevron-down fa-xs" style="font-size: 9px;"></i></a>
+            <div class="custom-dropdown-content">
+              <a href="siteweb.html"><i class="fa-regular fa-window-maximize"></i> Création de site</a>
+              <a href="creationlogo.html"><i class="fa-solid fa-swatchbook"></i> Création de logo</a>
+              <a href="referencement.html"><i class="fa-solid fa-chart-line"></i> Référencement de sites</a>
+              <a href="hebergement.html"><i class="fa-solid fa-window-restore"></i> Hébergement web</a>
+              <a href="video.html"><i class="fa-solid fa-video"></i> Réalisation de vidéo</a>
+              <a href="emailing.html"><i class="fa-regular fa-calendar-days"></i> Gestion emailing</a>
+            </div>
+          </div>
+          <a href="agence.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Agence</a>
+          <a href="portfolio.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Portfolio</a>
+          <a href="contact.html" class="custom-nav-link text-lg font-medium hover:text-blue-800">Contact</a>
+        </nav>
+        <div class="navbar-container flex items-center ml-auto">
+          <a href="contact.html" class="custom-contact-button text-base px-2 text-blue-900 border-2 border-gray-300 rounded-lg hover:bg-blue-900 hover:text-white hover:border-blue-900 transition ease-linear duration-300 mr-2">
+            <span class="button-text">Nous contacter</span>
+            <i class="fa-solid fa-phone phone-icon"></i>
+          </a>
+          <button id="menu-button" class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="lg:hidden">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="index.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Accueil</a>
+          <div class="custom-dropdown">
+            <a href="services.html" class="custom-nav-link custom-services-link font-normal text-lg hover:text-blue-800">Services</a>
+          </div>
+          <a href="agence.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Agence</a>
+          <a href="portfolio.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Portfolio</a>
+          <a href="contact.html" class="custom-nav-link text-lg font-normal hover:text-blue-800">Contact</a>
+        </nav>
+      </div>
+    </header>
+        
+     
+      <section class="background-image-section" alt="Illustration d'une enveloppe rose représentant le service de gestion d'emailing">
+        <div class="px-8 mx-auto md:px-12 lg:px-32 max-w-7xl">
+            <div class="text-center">
+              <h1 class="text-3xl md:text-5xl font-normal tracking-tighter text-white lg:text-7xl text-balance ">
+                Gestion emailing
+                </h1>
+    
+                <!-- Fil d'Ariane -->
+                <nav aria-label="Breadcrumb" class="breadcrumb-nav mt-4">
+                  <ol role="list" class="flex justify-center items-center space-x-4">
+                    <a href="index.html" class="text-white dark:text-gray-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                      </svg>
+                  </a>
+                      <span class="mx-5 text-white dark:text-gray-300 rtl:-scale-x-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                      <li>
+                          <div class="flex items-center">
+                              <a href="services.html" class="lg:ml-4 text-xs lg:text-sm font-normal md:font-medium text-gray-500 hover:scale-95 hover:text-gray-700">Services</a>
+                          </div>
+                      </li>
+                      <span class="mx-5 text-white dark:text-gray-300 rtl:-scale-x-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                      <li>
+                          <div class="flex items-center">
+                              <a href="emailing.html" class="lg:ml-4 text-xs lg:text-sm font-normal md:font-medium text-blue-500 hover:scale-95 hover:text-gray-700" aria-current="page">Emailing</a>
+                          </div>
+                      </li>
+                  </ol>
+              </nav>
+    
+            </div>
+        </div>
+    </section>
+    <section class="dernier-element">
+      <section class="flex p-5 py-4 flex-wrap">
+        <!-- Partie gauche : Nos Services et Formulaire -->
+        <div class="w-full md:w-full md:px-8 lg:w-1/3 p-3 flex flex-col items-center services-formulaire">
+          <div class="w-full mx-auto bg-white rounded-xl shadow-lg p-4 nos-services">
+            <nav class="flex-1 px-2 bg-white">
+              <p class="text-2xl font-medium px-4 py-2">
+                Nos Services
+              </p>
+              <ul class="space-y-0.5">
+                <li>
+                  <a href="siteweb.html">
+                    <button class="inline-flex items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Création de site</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="creationlogo.html">
+                    <button class="inline-flex items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Création de logo</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="referencement.html">
+                    <button class="inline-flex text-left items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Référencement de sites web</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="hebergement.html">
+                    <button class="inline-flex text-left items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Hébergement de sites</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="emailing.html">
+                    <button class="inline-flex items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Gestion emailing</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+                <li>
+                  <a href="video.html">
+                    <button class="inline-flex items-center justify-between w-full px-4 py-2 text-base text-gray-500 transition duration-200 ease-in-out transform rounded-lg focus:shadow-outline hover:bg-gray-100 hover:scale-95 hover:text-blue-500 group">
+                      <span class="text-lg font-normal">Réalisation de vidéos</span>
+                      <i class="fa-solid fa-arrow-right fa-xs text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></i>
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="w-full bg-white p-8 rounded-xl shadow-lg mt-6 formulaire">
+            <h2 class="text-2xl font-medium mb-2 px-4">Devis création de site web</h2>
+            <p class="text-base font-thin text-gray-600 mb-2 pl-4" style="overflow-wrap: break-word;">
+              Votre site ouvert 24/7, brisez les barrières de temps et d'espace. Contactez-nous pour un devis instantané et boostez vos interactions client.
+            </p>
+            <form action="process_form.php" method="post">
+              <div class="grid grid-cols-1 gap-2">
+                <div>
+                  <input type="text" id="name" name="name" placeholder="Nom" class="form-input text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none" required>
+                </div>
+                <div>
+                  <input type="email" id="email" name="email" placeholder="E-mail" class="form-input text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none" required>
+                </div>
+                <div>
+                  <input type="tel" id="phone" name="phone" placeholder="Téléphone" class="form-input text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none" required>
+                </div>
+                <div>
+                  <input type="text" id="company" name="company" placeholder="Entreprise" class="form-input text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none">
+                </div>
+                <div>
+                  <input type="url" id="website" name="website" placeholder="Site Web" class="form-input text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none">
+                </div>
+                <div>
+                  <textarea id="message" name="message" rows="4" placeholder="Message" class="form-textarea text-sm mt-2 block w-full rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 border-none" required></textarea>
+                </div>
+              </div>
+              <div class="mt-6">
+                <label class="inline-flex items-center">
+                  <input type="checkbox" class="form-checkbox text-blue-600" required>
+                  <span class="ml-5 text-sm text-gray-600">En utilisant ce formulaire, vous acceptez le stockage et le traitement de vos données par ce site Web.</span>
+                </label>
+              </div>
+              <div class="text-center mt-8">
+                <button type="submit" class="text-lg group items-center mt-4 px-4 py-2 bg-blue-700 text-white rounded transform transition duration-300 ease-in-out hover:bg-blue-900 hover:scale-105">
+                  Envoyez <i class="fa-regular fa-paper-plane ml-2 opacity-0 transform -translate-x-2 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0" style="color: #ffffff; --fa-rotate-angle: 15deg;"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>    <!-- Partie droite : Texte -->
+        <div class="w-full lg:w-2/3 px:5 md:px-8  lg:px-8 py-4 text-section">
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full px-4 lg:pr-36 mb-8">
+              <h2 class="text-3xl md:text-4xl font-semibold mb-4 pb-2">
+                Création et gestion de newsletters
+            </h2>
+              <p class="text-lg text-gray-700 pb-4 leading-relaxed ">
+                La newsletter, cette puissante carte de visite digitale, est devenue un outil indispensable pour toute stratégie de communication dynamique. Chez Ko-ordinate, basé à Bruxelles, nous sommes experts en création et gestion d’emailing, offrant à votre entreprise la possibilité de se connecter régulièrement avec sa communauté en ligne. Que votre objectif soit d’informer, de promouvoir ou d’engager, nos newsletters sont conçues pour refléter votre marque et parler directement à vos abonnés.
+
+            </p>
+            </div>
+            <div class="w-full px-4 mb-8  lg:pr-36">
+              <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 ">
+                Marquer les esprits et favoriser l'engagement
+
+              </h2>
+              <p class="text-lg text-gray-700 pb-4 leading-relaxed ">
+                Une newsletter efficace se distingue par son contenu attractif et sa présentation soignée. Nos campagnes d’emailing combinent actualités pertinentes et offres commerciales, captant ainsi l’intérêt de votre audience à chaque envoi. Le contenu est présenté de manière concise et interactive, enrichi de liens, de personnalisations et d’éléments visuels captivants, y compris des vidéos, pour maximiser l’engagement.
+            </p>                
+            </div>
+            <div class="w-full px-4 mb-8  lg:pr-36">
+              <h2 class="text-2xl md:text-3xl font-semibold mb-4 pb-2 ">
+                La clé d'une communication réussie
+                </h2>
+                <p class="text-lg text-gray-700 pb-6 leading-relaxed">
+                    Conscients de l’importance de se démarquer dans la boîte de réception, nous portons une attention particulière au design de chaque newsletter. En harmonie avec l’identité visuelle de votre site web, nos créations utilisent votre logo, vos couleurs et une mise en page attrayante pour une reconnaissance instantanée et une expérience utilisateur optimale. Un design soigné, associé à un contenu de qualité, établit un lien de confiance avec vos abonnés, les incitant à interagir davantage avec votre marque.
+                </p>                
+                </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script>
+const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuButton && mobileMenu) {
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('show'); 
+  });
+}
+    </script>
+</body>
+<footer class="mt-8 bg-base-200 pt-9">
+  <div class="mx-auto w-full max-w-[1166px] px-4 xl:px-0">
+    <div class="flex flex-col justify-between gap-8 sm:px-[18px] md:flex-row md:px-10">
+      <div class="md:w-[316px]">
+        <p class="text-xl  font-medium text-gray-700">À propos de nous</p>
+        <p class="mt-[18px] text-base font-normal text-gray-700/80">
+          Digital Dreamer, basée à Schaerbeek, est votre partenaire de confiance à Bruxelles pour des solutions web créatives et efficaces. Nous offrons une expertise en création de sites web et en marketing digital, adaptée à chaque projet pour enrichir votre présence en ligne.
+        </p>
+        <div class="mt-[18px] flex gap-4">
+            <img alt="Google partner" loading="lazy" width="200" height="100" src="image/PartnerBadge-Horizontal3-removebg-preview.png" />
+        </div>
+      </div>
+        <div class="md:w-[316px] flex flex-col gap-6">
+        <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-phone "></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Téléphone :</p>
+            <a href="tel:+32490358004" class="font-Inter text-sm text-gray-700">+32 (0) 490 35 80 04</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-envelope"></i>            
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse électronique :</p>
+            <a href="mailto:info@ko-ordinate.be" class="font-Inter text-sm text-gray-700">info@ko-ordinate.be</a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700">Adresse :</p>
+            <a 
+              href="https://maps.app.goo.gl/hEdCitDUmHFraqhF7" 
+              target="_blank" 
+              class="font-Inter text-sm text-gray-700"
+            >
+              Rue Anatole France 119, 1030 <br>Schaerbeek
+            </a>
+          </div>
+        </div>
+          <div class="flex">
+          <div class="flex h-[38px] w-[38px] items-center justify-center rounded-full ">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <div class="ml-[18px]">
+            <p class="font-Inter text-base font-medium text-gray-700 mb-1 ">Heures d'ouverture :</p>
+            <p class="font-Inter text-sm text-gray-700 mb-1">Lundi – Vendredi : 9h30 – 18h</p>
+            <p class="font-Inter text-sm text-gray-700">Mercredi – Samedi : 9h30 – 14h</p>
+          </div>
+        </div>
+      </div>
+        <div class="mt-6 flex w-full flex-col justify-between text-gray-700 sm:flex-row md:mt-0 md:max-w-[341px]">
+        <div>
+          <p class="text-deutziawhite font-inter text-[18px] font-medium leading-normal">Nos services</p>
+          <ul class="divide-y divide-gray-300">
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="siteweb.html">Création de site web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="creationlogo.html">Création de logo</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="referencement.html">Référencement de sites web</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="hebergement.html">Hébergement de sites</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="emailing.html">Gestion emailing</a>
+            </li>
+            <li class="mt-[10px] pt-[10px]">
+              <a class="text-deutziawhite hover:text-deutziawhite/80 font-inter text-base font-normal hover:font-semibold" href="video.html">Réalisation de vidéos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+      <hr class="mt-[30px] text-gray-700" />
+    <div class="flex items-center justify-center pb-8 pt-[9px] md:py-8">
+      <p class="text-[10px] font-normal text-gray-700 md:text-[12px]">
+        © Digital Dreamer SRL 2024. Tous droits réservés | Partenaire digital
+      </p>
+    </div>
+  </div>
+</footer>
+</html>

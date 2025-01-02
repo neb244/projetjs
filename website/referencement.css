@@ -1,0 +1,298 @@
+.marqueur {
+    background: linear-gradient(45deg, #181c54, #0044ff); /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Clipper le fond au texte */
+    -webkit-text-fill-color: transparent; /* Remplir le texte avec le fond */
+    display: inline-block; /* Permet d'ajouter du padding autour du mot */
+}
+.clé {
+    background: #0091ff; /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Clipper le fond au texte */
+    -webkit-text-fill-color: transparent; /* Remplir le texte avec le fond */
+    display: inline-block;
+
+}
+
+.background-image-section {
+  display: flex;
+  align-items: center;
+  background-image: url('image/pexels-kindelmedia-7688336.jpg'); 
+  background-size: cover; /* Assure que l'image couvre toute la section */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  color: white; /* Change la couleur du texte pour qu'il soit lisible sur l'image */
+  height: 35vh;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .background-image-section{
+  height: 20vh;
+  }
+}
+
+/* Pour la section de l'image de fond */
+.background-image-section {
+    position: relative; /* Nécessaire pour le positionnement absolu de la div image */
+    overflow: hidden; /* Pour s'assurer que l'image ne déborde pas de la section */
+}
+
+.breadcrumb-nav {
+    margin-top: 1rem; /* Ajouter une marge supérieure pour espacer du titre */
+  }
+  
+  .breadcrumb-nav ol {
+    display: flex;
+    justify-content: center; /* Centrer le fil d'Ariane horizontalement */
+    align-items: center; /* Centrer le contenu verticalement */
+    gap: 0.5rem; /* Ajouter un espace entre les éléments */
+  }
+  
+  .breadcrumb-nav a {
+    font-size: 1.1rem;
+    transition: color 0.2s, transform 0.2s;
+  }
+  
+  .breadcrumb-nav a:hover {
+    color: #1562cf; /* Couleur du texte au survol */
+    transform: scale(0.95); /* Réduire légèrement la taille au survol */
+  }
+  
+  .breadcrumb-nav ion-icon {
+    color: #D1D5DB; /* Couleur des icônes */
+  }
+  
+/* Pour la div contenant l'image */
+
+.band {
+    background-color: #171616; /* Couleur de fond noire */
+    height: 10vh; /* Hauteur de la bandelette */
+    display: flex; /* Utiliser flexbox pour aligner les éléments horizontalement */
+    align-items: center; /* Centrer verticalement les éléments */
+    justify-content: center; /* Centrer horizontalement les éléments */
+    overflow: hidden; /* Cacher les éléments qui débordent */
+    position: relative; /* Positionner la bande relative pour l'animation */
+}
+
+.scroll-list {
+    display: flex; /* Utiliser flexbox pour les éléments de la liste */
+    white-space: nowrap; /* Prévenir le retour à la ligne des éléments */
+    animation: scroll 90s linear infinite; /* Animation de défilement */
+}
+
+.scroll-list li {
+    display: inline-block; /* Afficher les éléments en ligne */
+    margin: 0 30px; /* Espacer les éléments de la liste */
+    color: white; /* Couleur du texte */
+    font-size: 1.80rem; /* Taille de la police, ajuste selon tes besoins */
+    font-weight: 330;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*BARRE DE NAVIGATION________________________________________________________________________
+/* Masquer la bandelette sur les écrans de moins de 768px */
+@media (max-width: 767px) {
+  .bandelette {
+    display: none;
+  }
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem; /* Réduction du padding vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style du logo */
+.custom-logo-image {
+  max-height: 100px; /* Réduction de la taille du logo */
+  width: auto;
+  margin-left: 0rem;
+}
+
+/* Style général de la barre de navigation */
+.custom-nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-nav a.custom-nav-link {
+  color: #4a5568; /* Couleur de texte */
+  font-weight: 400; /* Font medium */
+  font-size: 1.25rem; /* Taille du texte augmentée (lg -> xl) */
+  padding: 0.25rem 0.75rem; /* Padding autour des liens */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.custom-nav a.custom-nav-link:hover {
+  color: #2b6cb0; /* Changement de couleur au survol */
+}
+
+/* Dropdown - Services */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%; /* Position à 50% de la largeur du parent */
+  transform: translateX(-50%); /* Centrer horizontalement */
+  background-color: #f9f9f9;
+  min-width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  padding: 0.5rem 0;
+  border-radius: 10px; /* Bordures arrondies pour le dropdown */
+}
+
+.custom-dropdown-content a {
+  color: #4a5568;
+  padding: 0.75rem 1.5rem; /* Plus d'espace autour du texte */
+  text-decoration: none;
+  display: block;
+  font-size: 1.125rem; /* Taille de police agrandie */
+  transition: background-color 0.3s ease;
+}
+
+.custom-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #1e40af;
+}
+
+.custom-dropdown-content a i {
+  margin-right: 0.5rem; /* Ajoute de l'espace entre l'icône et le texte */
+}
+
+/* Affichage du dropdown au survol */
+.custom-dropdown:hover .custom-dropdown-content {
+  display: block;
+}
+
+/* Bouton contact */
+.custom-contact-button {
+  padding: 0.25rem 0.75rem; /* Moins de padding pour le bouton */
+  margin-bottom: 0; /* Enlever la marge en bas */
+  background-color: white;
+  border: 2px solid #d1d5db; /* Border color: gray-300 */
+  color: #1e40af; /* Texte bleu */
+  font-weight: 600; /* Font-semibold */
+  border-radius: 0.75rem; /* Arrondissement léger des coins */
+  display: inline-block; /* Default alignment */
+}
+
+.custom-contact-button .phone-icon {
+  display: none;
+}
+
+.custom-contact-button .button-text {
+  display: inline;
+}
+
+/* Mobile et tablette */
+@media screen and (max-width: 820px) {
+  #mobile-menu {
+    display: none;
+    justify-content: center; /* Centre horizontalement le menu */
+    align-items: center; /* Centre les éléments verticalement si nécessaire */
+  }
+
+  #mobile-menu.show {
+    display: flex; /* Affiché lorsque la classe 'show' est ajoutée */
+  }
+
+  #mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les liens à l'intérieur du menu */
+  }
+
+  .custom-nav-link,
+  .custom-dropdown {
+    text-align: center; /* Centre les textes */
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-contact-button {
+    margin-left: auto; /* Push the button to the far right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-contact-button .button-text {
+    display: none;
+  }
+
+  .custom-contact-button .phone-icon {
+    display: inline;
+    font-size: 1.1rem; /* Adjust icon size as needed */
+  }
+
+  #menu-button {
+    margin-left: auto; /* Push the button to the far right */
+    display: flex;
+  }
+
+  .custom-nav {
+    display: none !important;
+  }
+}
+/*FIN DE LA BARRE__________________________________________________________________________*/
+
+@media (max-width: 820px) {
+  .dernier-element {
+    display: flex;
+    flex-direction: column; /* Réorganisation verticale */
+  }
+
+  .texte-section {
+    order: 1; /* Affiche le texte en premier */
+    width: 100%; /* Prend toute la largeur */
+  }
+
+  .services-formulaire {
+    order: 2; /* Affiche la partie "Nos Services" et "Formulaire" en dessous */
+    width: 100%; /* Prend toute la largeur */
+    display: flex;
+    flex-direction: column; /* S'assure que les éléments internes (services et formulaire) sont empilés */
+  }
+
+  .nos-services,
+  .formulaire {
+    width: 100%; /* Chaque bloc prend toute la largeur */
+    margin: 0 auto; /* Centrer */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services-formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* La section "Nos Services" + formulaire prend toute la largeur */
+  }
+
+  .nos-services, .formulaire {
+    width: 100%; /* Chaque bloc interne prend toute la largeur */
+    margin: 0 auto; /* Centrer les blocs */
+  }
+}
